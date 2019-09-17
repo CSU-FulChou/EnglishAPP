@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "小学英语学伴"; ObjectID = "3eY-Kv-SlC"; */
+"3eY-Kv-SlC.text" = "小学英语学伴";
+
+/* Class = "UILabel"; text = "say some thing"; ObjectID = "A0H-JD-9Sa"; */
+"A0H-JD-9Sa.text" = "say some thing";
+
+/* Class = "UILabel"; text = "我的书架"; ObjectID = "aQa-mE-54L"; */
+"aQa-mE-54L.text" = "我的书架";
+
+/* Class = "UIButton"; normalTitle = "我的书架"; ObjectID = "gFC-qS-U45"; */
+"gFC-qS-U45.normalTitle" = "我的书架";
+
+/* Class = "UILabel"; text = "今日课程"; ObjectID = "sH2-lo-i41"; */
+"sH2-lo-i41.text" = "今日课程";
+
+/* Class = "UIButton"; normalTitle = "选择课本"; ObjectID = "w0M-Fd-k8U"; */
+"w0M-Fd-k8U.normalTitle" = "选择课本";
+
+/* Class = "UIButton"; normalTitle = "同步练习"; ObjectID = "zFH-eQ-ATd"; */
+"zFH-eQ-ATd.normalTitle" = "同步练习";
