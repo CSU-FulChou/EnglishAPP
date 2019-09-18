@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *pathBackColor;/**<线条背景色*/
 @property (nonatomic, strong) UIColor *pathFillColor;/**<线条填充色*/
 @property (nonatomic, strong) UIImageView *pointImage;/**<小圆点图片*/
+
 @property (nonatomic, strong) ZFCountingLabel *progressLabel;
 
 //角度相关

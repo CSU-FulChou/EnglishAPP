@@ -51,13 +51,14 @@ class WordListeningDetails: UIViewController {
         // Do any additional setup after loading the view.
         progresssView.startAngle = 0;
         progresssView.reduceAngle = 0;
-        progresssView.strokeWidth = 10;
+        progresssView.strokeWidth = 5;
         progresssView.duration = 2.0;
         progresssView.showPoint = false
         progresssView.showProgressText = false
         progresssView.increaseFromLast = true 
         progresssView.progress = 0.5
-        progresssView.pathFillColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        progresssView.pathBackColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        progresssView.pathFillColor = UIColor(hexString: "#FF6968")
         
     }
     

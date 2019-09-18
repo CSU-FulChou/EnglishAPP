@@ -6,7 +6,7 @@
 //  Copyright © 2019 org.csu. All rights reserved.
 //
 
-#import "ZFcircleProgress.h"
+#import "ZFCircleProgress.h"
 
 @interface ZFCircleProgress ()<CAAnimationDelegate>
 
@@ -28,6 +28,7 @@
     }
     return self;
 }
+
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -64,11 +65,11 @@ strokeWidth:(CGFloat)strokeWidth {
     return self;
 }
 
-//初始化数据
+//初始化数据   the default
 - (void)initialization {
     self.backgroundColor = [UIColor clearColor];
-    _pathBackColor = [UIColor lightGrayColor];
-    _pathFillColor = [UIColor redColor];
+    _pathBackColor = [UIColor lightGrayColor]; // 默认灰色背景
+    _pathFillColor = [UIColor redColor]; // 默认红色背景
     
     _strokeWidth = 10;//线宽默认为10
     _startAngle = ZZCircleDegreeToRadian(0);//圆起点位置
@@ -77,8 +78,9 @@ strokeWidth:(CGFloat)strokeWidth {
     _duration = 1.5;//动画时长
     _showPoint = YES;//小圆点
     _showProgressText = YES;//文字
-    
-    _realWidth = ZZCircleSelfWidth>ZZCircleSelfHeight?ZZCircleSelfHeight:ZZCircleSelfWidth;
+    // 真实的宽度
+    _realWidth =  ZZCircleSelfWidth; //ZZCircleSelfWidth>ZZCircleSelfHeight?ZZCircleSelfHeight:ZZCircleSelfWidth;
+    // 真实的宽度减去线宽 除二
     _radius = _realWidth/2.0 - _strokeWidth/2.0;
 }
 
