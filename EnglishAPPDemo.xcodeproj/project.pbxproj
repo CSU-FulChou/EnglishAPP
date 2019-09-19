@@ -12,6 +12,7 @@
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
 		BF306FF7232AA17D002ABD67 /* WordListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF6232AA17C002ABD67 /* WordListening.swift */; };
 		BF306FF9232B863E002ABD67 /* WordListeningDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF8232B863E002ABD67 /* WordListeningDetails.swift */; };
+		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
 		BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B73231CA45600792E80 /* AppDelegate.swift */; };
 		BF919B76231CA45600792E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B75231CA45600792E80 /* ViewController.swift */; };
 		BF919B79231CA45600792E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B77231CA45600792E80 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 		BF306FF6232AA17C002ABD67 /* WordListening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListening.swift; sourceTree = "<group>"; };
 		BF306FF8232B863E002ABD67 /* WordListeningDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListeningDetails.swift; sourceTree = "<group>"; };
+		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
 		BF919B70231CA45600792E80 /* EnglishAPPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishAPPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF919B73231CA45600792E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF919B75231CA45600792E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF5787D82333AE5E0088EC33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5787D62333AB460088EC33 /* UnitChooseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF5787D92333AE8A0088EC33 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF919B85231CA7B700792E80 /* testViewViewController.swift */,
+				BF919B86231CA7B700792E80 /* testViewViewController.xib */,
+				BF919B8B231E0DC800792E80 /* NewItemViewController.swift */,
+				BF306FF2232673DF002ABD67 /* SynExercise.swift */,
+				BF306FF6232AA17C002ABD67 /* WordListening.swift */,
+				BF306FF8232B863E002ABD67 /* WordListeningDetails.swift */,
+				BFD72967232CD51A002D79AD /* SentenceListeningChooseView.swift */,
+				BFD72969232CD953002D79AD /* SentenceListeningDetailsView.swift */,
+				BFD7296B232CDEE1002D79AD /* WordTestView.swift */,
+				BFD7296D232CFFCD002D79AD /* SentenceTestView.swift */,
+				BFD7296F232D018D002D79AD /* ErrorBooksView.swift */,
+				BFD72971232D0B01002D79AD /* UnitChooseView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		BF919B67231CA45500792E80 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +140,8 @@
 		BF919B72231CA45600792E80 /* EnglishAPPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF5787D92333AE8A0088EC33 /* ViewController */,
+				BF5787D82333AE5E0088EC33 /* View */,
 				BFD72973232F5FBA002D79AD /* ZFCircleProgress */,
 				BF919B73231CA45600792E80 /* AppDelegate.swift */,
 				BF919B75231CA45600792E80 /* ViewController.swift */,
@@ -118,19 +149,7 @@
 				BF919B7A231CA45800792E80 /* Assets.xcassets */,
 				BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */,
 				BF919B7F231CA45800792E80 /* Info.plist */,
-				BF919B85231CA7B700792E80 /* testViewViewController.swift */,
-				BF919B86231CA7B700792E80 /* testViewViewController.xib */,
-				BF919B8B231E0DC800792E80 /* NewItemViewController.swift */,
-				BF306FF2232673DF002ABD67 /* SynExercise.swift */,
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
-				BF306FF6232AA17C002ABD67 /* WordListening.swift */,
-				BF306FF8232B863E002ABD67 /* WordListeningDetails.swift */,
-				BFD72967232CD51A002D79AD /* SentenceListeningChooseView.swift */,
-				BFD72969232CD953002D79AD /* SentenceListeningDetailsView.swift */,
-				BFD7296B232CDEE1002D79AD /* WordTestView.swift */,
-				BFD7296D232CFFCD002D79AD /* SentenceTestView.swift */,
-				BFD7296F232D018D002D79AD /* ErrorBooksView.swift */,
-				BFD72971232D0B01002D79AD /* UnitChooseView.swift */,
 			);
 			path = EnglishAPPDemo;
 			sourceTree = "<group>";
@@ -268,6 +287,7 @@
 				BFD7296E232CFFCD002D79AD /* SentenceTestView.swift in Sources */,
 				BF919B76231CA45600792E80 /* ViewController.swift in Sources */,
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
+				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
 				BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */,
 				BF306FF3232673DF002ABD67 /* SynExercise.swift in Sources */,
 				BFD72968232CD51A002D79AD /* SentenceListeningChooseView.swift in Sources */,
