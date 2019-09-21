@@ -47,18 +47,11 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
        // todayCourse.text = "hello"
     }
+    
     func init_ui() -> Void {
 
     }
     
-    
-    @IBAction func showMessage() {
-//        let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
-//        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-//        self.present(alertController, animated: true, completion: nil)
-       let testViewController = testViewViewController()
-        self.present(testViewController, animated: true, completion: nil)
-    }
 
 
 }

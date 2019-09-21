@@ -85,7 +85,7 @@
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.text = [NSString stringWithFormat:@"%.0f%%",_increaseValue];
+        self.text = [NSString stringWithFormat:@"%.0f%%",self->_increaseValue];
     });
 }
 
