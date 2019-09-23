@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginController: UIViewController {
+  
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var certificationCode: UITextField!
     
@@ -39,6 +40,8 @@ class LoginController: UIViewController {
         
         setBottomBorder(textField: phoneNumber)
         setBottomBorder(textField: certificationCode)
+        
+        
 //        let settingButton = UIButton(frame: CGRect(x: 342.5, y: 44.5, width: 20, height: 21))
 //        settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
 //        bg_HeadView.addSubview(settingButton)
