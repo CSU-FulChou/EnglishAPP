@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A17FAE916F70BFB1C2E83E72 /* libPods-EnglishAPPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */; };
+		BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */; };
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
 		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
 		BF5787E92334890C0088EC33 /* WordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787DD2334890C0088EC33 /* WordTestView.swift */; };
@@ -17,7 +18,6 @@
 		BF5787ED2334890C0088EC33 /* testViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5787E12334890C0088EC33 /* testViewViewController.xib */; };
 		BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E22334890C0088EC33 /* SynExercise.swift */; };
 		BF5787EF2334890C0088EC33 /* testViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E32334890C0088EC33 /* testViewViewController.swift */; };
-		BF5787F02334890C0088EC33 /* ErrorBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E42334890C0088EC33 /* ErrorBooksView.swift */; };
 		BF5787F12334890C0088EC33 /* WordListeningDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E52334890C0088EC33 /* WordListeningDetails.swift */; };
 		BF5787F22334890C0088EC33 /* SentenceListeningDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E62334890C0088EC33 /* SentenceListeningDetailsView.swift */; };
 		BF5787F32334890C0088EC33 /* WordListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787E72334890C0088EC33 /* WordListening.swift */; };
@@ -31,6 +31,9 @@
 		BF578804233504E00088EC33 /* MyShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF578803233504E00088EC33 /* MyShelfController.swift */; };
 		BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5788072335088B0088EC33 /* BookInShelf.swift */; };
 		BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */; };
+		BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */; };
+		BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD50123365253004021D1 /* CreditAboutController.swift */; };
+		BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD50323365695004021D1 /* AboutUsController.swift */; };
 		BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B73231CA45600792E80 /* AppDelegate.swift */; };
 		BF919B76231CA45600792E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B75231CA45600792E80 /* ViewController.swift */; };
 		BF919B79231CA45600792E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B77231CA45600792E80 /* Main.storyboard */; };
@@ -43,6 +46,7 @@
 /* Begin PBXFileReference section */
 		7564D5E222C353C0A5F46886 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.debug.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B431AB5E69C77909FDDBBB /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.release.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBooksView.swift; sourceTree = "<group>"; };
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
 		BF5787DD2334890C0088EC33 /* WordTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTestView.swift; sourceTree = "<group>"; };
@@ -52,7 +56,6 @@
 		BF5787E12334890C0088EC33 /* testViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testViewViewController.xib; sourceTree = "<group>"; };
 		BF5787E22334890C0088EC33 /* SynExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynExercise.swift; sourceTree = "<group>"; };
 		BF5787E32334890C0088EC33 /* testViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewViewController.swift; sourceTree = "<group>"; };
-		BF5787E42334890C0088EC33 /* ErrorBooksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBooksView.swift; sourceTree = "<group>"; };
 		BF5787E52334890C0088EC33 /* WordListeningDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListeningDetails.swift; sourceTree = "<group>"; };
 		BF5787E62334890C0088EC33 /* SentenceListeningDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceListeningDetailsView.swift; sourceTree = "<group>"; };
 		BF5787E72334890C0088EC33 /* WordListening.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListening.swift; sourceTree = "<group>"; };
@@ -66,6 +69,9 @@
 		BF578803233504E00088EC33 /* MyShelfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShelfController.swift; sourceTree = "<group>"; };
 		BF5788072335088B0088EC33 /* BookInShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInShelf.swift; sourceTree = "<group>"; };
 		BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCreditController.swift; sourceTree = "<group>"; };
+		BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpRecordController.swift; sourceTree = "<group>"; };
+		BF6FD50123365253004021D1 /* CreditAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAboutController.swift; sourceTree = "<group>"; };
+		BF6FD50323365695004021D1 /* AboutUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsController.swift; sourceTree = "<group>"; };
 		BF919B70231CA45600792E80 /* EnglishAPPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishAPPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF919B73231CA45600792E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF919B75231CA45600792E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,8 +129,8 @@
 		BF5787DC233487C30088EC33 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BF5787E42334890C0088EC33 /* ErrorBooksView.swift */,
 				BF5787E02334890C0088EC33 /* NewItemViewController.swift */,
+				BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */,
 				BF5787DE2334890C0088EC33 /* SentenceListeningChooseView.swift */,
 				BF5787E62334890C0088EC33 /* SentenceListeningDetailsView.swift */,
 				BF5787DF2334890C0088EC33 /* SentenceTestView.swift */,
@@ -142,6 +148,9 @@
 				BF5787FD2334CE040088EC33 /* BooksChooseController.swift */,
 				BF578803233504E00088EC33 /* MyShelfController.swift */,
 				BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */,
+				BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */,
+				BF6FD50123365253004021D1 /* CreditAboutController.swift */,
+				BF6FD50323365695004021D1 /* AboutUsController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -314,6 +323,7 @@
 				BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */,
 				BF919B76231CA45600792E80 /* ViewController.swift in Sources */,
 				BF5787EF2334890C0088EC33 /* testViewViewController.swift in Sources */,
+				BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */,
 				BF5787F42334890C0088EC33 /* UnitChooseView.swift in Sources */,
 				BF5787EB2334890C0088EC33 /* SentenceTestView.swift in Sources */,
 				BF5787EC2334890C0088EC33 /* NewItemViewController.swift in Sources */,
@@ -322,17 +332,19 @@
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
 				BF5787F32334890C0088EC33 /* WordListening.swift in Sources */,
+				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
 				BF5787FE2334CE040088EC33 /* BooksChooseController.swift in Sources */,
 				BF5787FC2334CC920088EC33 /* NoServiceController.swift in Sources */,
 				BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */,
 				BF5787F82334C3C10088EC33 /* RegisterController.swift in Sources */,
 				BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */,
 				BF5787F12334890C0088EC33 /* WordListeningDetails.swift in Sources */,
+				BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */,
 				BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */,
 				BF5787FA2334CB1A0088EC33 /* RecommendationController.swift in Sources */,
 				BF5787F62334AA2F0088EC33 /* LoginController.swift in Sources */,
+				BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */,
 				BF5787EA2334890C0088EC33 /* SentenceListeningChooseView.swift in Sources */,
-				BF5787F02334890C0088EC33 /* ErrorBooksView.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,
 				BF5787E92334890C0088EC33 /* WordTestView.swift in Sources */,
 				BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */,

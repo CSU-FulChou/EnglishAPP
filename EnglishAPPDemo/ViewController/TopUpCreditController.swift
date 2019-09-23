@@ -10,6 +10,12 @@ import UIKit
 
 class TopUpCreditController: UIViewController {
 
+    @IBOutlet weak var lineImageViewRight: UIImageView!
+    @IBOutlet weak var lineImageViewLeft: UIImageView!
+    
+    @IBOutlet weak var wxpayBtn: UIButton!
+    @IBOutlet var cornorBounds: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +44,44 @@ class TopUpCreditController: UIViewController {
 
         self.view.addSubview(bg_HeadView)
         self.view.addSubview(editBtn)
-        // Do any additional setup after loading the view.
+        
+        // 画虚线：
+        UIGraphicsBeginImageContext(lineImageViewLeft.frame.size) // 位图上下文绘制区域
+        lineImageViewLeft.image?.draw(in: lineImageViewLeft.bounds)
+        let context:CGContext = UIGraphicsGetCurrentContext()!
+        context.setLineCap(CGLineCap.square)
+        
+        let lengths:[CGFloat] = [5,8]
+        context.setStrokeColor(UIColor(hexString: "#AEAEAE").cgColor)
+        context.setLineWidth(1)
+        context.setLineDash(phase: 0, lengths: lengths)
+        context.move(to: CGPoint(x: 0, y: 10))
+        context.addLine(to: CGPoint(x: self.view.frame.width, y: 10))
+        context.strokePath()
+        lineImageViewLeft.image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsBeginImageContext(lineImageViewRight.frame.size) // 位图上下文绘制区域
+        lineImageViewRight.image?.draw(in: lineImageViewRight.bounds)
+        let context2:CGContext = UIGraphicsGetCurrentContext()!
+        context2.setLineCap(CGLineCap.square)
+        
+        let lengths2:[CGFloat] = [5,8]
+        context2.setStrokeColor(UIColor(hexString: "#AEAEAE").cgColor)
+        context2.setLineWidth(1)
+        context2.setLineDash(phase: 0, lengths: lengths2)
+        context2.move(to: CGPoint(x: 0, y: 10))
+        context2.addLine(to: CGPoint(x: self.view.frame.width, y: 10))
+        context2.strokePath()
+        lineImageViewRight.image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        for btn in cornorBounds{
+            btn.layer.masksToBounds = true
+            btn.layer.cornerRadius = 15
+            btn.layer.borderColor = UIColor(hexString: "#979797").cgColor
+            btn.layer.borderWidth = 1
+        }
+        wxpayBtn.layer.borderColor = UIColor.clear.cgColor
+        
     }
     
 
