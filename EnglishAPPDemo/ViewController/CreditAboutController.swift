@@ -33,7 +33,13 @@ class CreditAboutController: UIViewController {
         self.view.addSubview(bg_HeadView)
         textView.font = UIFont(name:textView.font!.fontName, size:15)
         textView.textColor = UIColor(hexString: "#343434")
-        textView.text = "学分在“学伴”系列软件中使用，学习每一课(单元）需要50学分。学分可通过微信或者支付宝方式进行充值购买，也可以通过注册、贡献、分享等其他活动获取（根据软件发布的活动规则执行）。\n 1、新用户注册即可获得100学分 \n 2、1元=100积分，也可以购买套餐方式获得优惠； \n 3、下载推荐的软件并注册可免费获取一定数量的学分 \n 4、分享”学伴“系列软件到朋友圈可获得100学分；\n 5、提交意见和反馈问题得到采纳可获得50学分 \n 统一注册用户的学风可在“学伴”系列软件中通用，严禁通过非法途径盗取或篡改学分。\n 如充值成功而学分获取失败请联系客服QQ。 \n 客服QQ：1234454546"
+        var str  = "学分在“学伴”系列软件中使用，学习每一课(单元）需要50学分。学分可通过微信或者支付宝方式进行充值购买，也可以通过注册、贡献、分享等其他活动获取（根据软件发布的活动规则执行）。\n 1、新用户注册即可获得100学分 \n 2、1元=100积分，也可以购买套餐方式获得优惠； \n 3、下载推荐的软件并注册可免费获取一定数量的学分 \n 4、分享”学伴“系列软件到朋友圈可获得100学分；\n 5、提交意见和反馈问题得到采纳可获得50学分 \n 统一注册用户的学风可在“学伴”系列软件中通用，严禁通过非法途径盗取或篡改学分。\n 如充值成功而学分获取失败请联系客服QQ。 \n 客服QQ：1234454546"
+        
+        let paraph = NSMutableParagraphStyle()
+        paraph.lineSpacing = 10;
+        let attributes = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15),
+                          NSAttributedString.Key.paragraphStyle: paraph]
+        textView.attributedText = NSAttributedString(string: str, attributes: attributes)
         // Do any additional setup after loading the view.
     }
     

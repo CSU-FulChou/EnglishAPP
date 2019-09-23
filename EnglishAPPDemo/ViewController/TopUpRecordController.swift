@@ -39,23 +39,14 @@ class TopUpRecordController: UIViewController,UITableViewDataSource,UITableViewD
     }
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         manu.dataSource = self
         manu.delegate = self
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let bg_HeadView = UIImageView()
         bg_HeadView.frame = CGRect(x: 0, y: 0, width: 375, height: 75)

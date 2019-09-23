@@ -9,7 +9,7 @@
 import UIKit
 
 class TopUpCreditController: UIViewController {
-
+    let Frame = UIScreen.main.applicationFrame
     @IBOutlet weak var lineImageViewRight: UIImageView!
     @IBOutlet weak var lineImageViewLeft: UIImageView!
     
@@ -21,7 +21,7 @@ class TopUpCreditController: UIViewController {
         
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: 375, height: 75)
+        bg_HeadView.frame = CGRect(x: 0, y: 0, width: Frame.width, height: 75)
         bg_HeadView.image = UIImage(named: "background_head")
         //头部标签。
         let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
@@ -76,7 +76,7 @@ class TopUpCreditController: UIViewController {
         
         for btn in cornorBounds{
             btn.layer.masksToBounds = true
-            btn.layer.cornerRadius = 15
+            btn.layer.cornerRadius = 23
             btn.layer.borderColor = UIColor(hexString: "#979797").cgColor
             btn.layer.borderWidth = 1
         }
