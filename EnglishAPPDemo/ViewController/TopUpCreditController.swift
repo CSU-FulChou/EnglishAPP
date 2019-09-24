@@ -9,7 +9,7 @@
 import UIKit
 
 class TopUpCreditController: UIViewController {
-    let Frame = UIScreen.main.applicationFrame
+    
     @IBOutlet weak var lineImageViewRight: UIImageView!
     @IBOutlet weak var lineImageViewLeft: UIImageView!
     
@@ -21,7 +21,7 @@ class TopUpCreditController: UIViewController {
         
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: Frame.width, height: 75)
+        bg_HeadView.frame = CGRect(x: 0, y: 0, width:SCREEn_WIDTH, height: 75*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
         //头部标签。
         let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
@@ -60,6 +60,7 @@ class TopUpCreditController: UIViewController {
         context.strokePath()
         lineImageViewLeft.image = UIGraphicsGetImageFromCurrentImageContext()
         
+        // 画右边的虚线；
         UIGraphicsBeginImageContext(lineImageViewRight.frame.size) // 位图上下文绘制区域
         lineImageViewRight.image?.draw(in: lineImageViewRight.bounds)
         let context2:CGContext = UIGraphicsGetCurrentContext()!
