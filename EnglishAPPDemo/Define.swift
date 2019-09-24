@@ -8,7 +8,7 @@
 
 import SwiftUI
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
-let SCREEn_WIDTH = UIScreen.main.bounds.width
+let SCREEN_WIDTH = UIScreen.main.bounds.width
 let X_ = UIScreen.main.bounds.width/414
 let Y_ = UIScreen.main.bounds.height/896
 

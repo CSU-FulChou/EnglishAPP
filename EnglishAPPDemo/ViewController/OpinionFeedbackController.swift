@@ -18,7 +18,7 @@ class OpinionFeedbackController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEn_WIDTH, height: 75*Y_)
+        bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 75*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
         //头部标签。
         let head = UILabel(frame: CGRect(x: 74*X_,y: 40*Y_, width: 280*Y_, height: 30*Y_))
@@ -32,6 +32,8 @@ class OpinionFeedbackController: UIViewController, UITextViewDelegate {
         let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
         bg_HeadView.addSubview(backButton)
+        
+        
         showNumLabel.text = "0/300"
         
         self.view.addSubview(bg_HeadView)

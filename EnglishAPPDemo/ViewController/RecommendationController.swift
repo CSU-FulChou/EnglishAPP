@@ -9,14 +9,15 @@
 import UIKit
 
 class RecommendationController: UIViewController {
-
+    @IBOutlet weak var testView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: 375, height: 70)
+        bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 80*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
         //头部标签。
-        let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
+        let head = UILabel(frame: CGRect(x: 74*X_,y: 40, width: 280*X_, height: 30*Y_))
         // 应该在这里写一个函数，动态的修改这个 text 的显示的value
         head.text = "更多软件推荐"
         head.textColor = UIColor.white
@@ -30,6 +31,11 @@ class RecommendationController: UIViewController {
         
         self.view.addSubview(bg_HeadView)
         // Do any additional setup after loading the view.
+
+    let test = RecommandationCellView(frame: CGRect(x: 40, y: 90, width: 70, height: 70))
+        self.view.addSubview(test)
+        
+                
     }
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C9M-Of-sP6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JUg-sk-pOt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -146,7 +146,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9K-my-hTd" userLabel="book1">
-                                <rect key="frame" x="13" y="727" width="88.000000000000014" height="109"/>
+                                <rect key="frame" x="13" y="727" width="88" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="L9K-my-hTd" secondAttribute="height" multiplier="88:109" id="qNo-Im-nXX"/>
                                     <constraint firstAttribute="width" constant="88" id="wlH-lc-msR"/>
@@ -154,7 +154,7 @@
                                 <state key="normal" backgroundImage="bg_books"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqd-tM-T2v" userLabel="book2">
-                                <rect key="frame" x="139" y="726" width="88.000000000000014" height="109"/>
+                                <rect key="frame" x="139" y="726" width="88" height="109"/>
                                 <constraints>
                                     <constraint firstItem="L9K-my-hTd" firstAttribute="width" secondItem="yqd-tM-T2v" secondAttribute="height" multiplier="88:109" id="42p-cY-SLK"/>
                                     <constraint firstAttribute="height" constant="109" id="EdB-PP-T0S"/>
@@ -221,7 +221,7 @@
                                 <state key="normal" backgroundImage="bt_symExercise"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-29-pq8" userLabel="学习报告">
-                                <rect key="frame" x="301" y="287" width="95" height="52"/>
+                                <rect key="frame" x="300" y="287" width="95" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="bt_startLearn"/>
                             </button>
@@ -778,6 +778,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HME-Ka-jjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5356.521739130435" y="888.61607142857144"/>
+        </scene>
+        <!--RecommandSoft-->
+        <scene sceneID="0Tv-se-Yyp">
+            <objects>
+                <viewController title="RecommandSoft" id="JUg-sk-pOt" customClass="RecommendationController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7G-zx-b5l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ez7-JM-wwJ" customClass="RecommandationCellView" customModule="EnglishAPPDemo" customModuleProvider="target">
+                                <rect key="frame" x="56" y="107" width="306" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sBy-7G-BXO"/>
+                    </view>
+                    <connections>
+                        <outlet property="testView" destination="ez7-JM-wwJ" id="Ky2-b9-1Fn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCB-4r-bY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6002.898550724638" y="888.61607142857144"/>
         </scene>
         <!--Login-->
         <scene sceneID="mOT-xc-3pF">

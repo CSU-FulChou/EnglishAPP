@@ -43,6 +43,8 @@
 		BF919B79231CA45600792E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B77231CA45600792E80 /* Main.storyboard */; };
 		BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF919B7A231CA45800792E80 /* Assets.xcassets */; };
 		BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */; };
+		BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */; };
+		BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91D1DC233A747000132BAE /* RecommandationCellView.xib */; };
 		BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD72976232F6025002D79AD /* ZFCircleProgress.m */; };
 		BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7297C232F613E002D79AD /* ZFCountingLabel.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,8 @@
 		BF919B7A231CA45800792E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF919B7D231CA45800792E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF919B7F231CA45800792E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandationCellView.swift; sourceTree = "<group>"; };
+		BF91D1DC233A747000132BAE /* RecommandationCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandationCellView.xib; sourceTree = "<group>"; };
 		BFD72974232F6024002D79AD /* EnglishAPPDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnglishAPPDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFD72975232F6025002D79AD /* ZFCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCircleProgress.h; sourceTree = "<group>"; };
 		BFD72976232F6025002D79AD /* ZFCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCircleProgress.m; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				BF5787D62333AB460088EC33 /* UnitChooseCell.swift */,
 				BF5788012334DB180088EC33 /* BookCell.swift */,
 				BF5788072335088B0088EC33 /* BookInShelf.swift */,
+				BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */,
+				BF91D1DC233A747000132BAE /* RecommandationCellView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			files = (
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF5787ED2334890C0088EC33 /* testViewViewController.xib in Resources */,
+				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
 				BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */,
 				BF919B79231CA45600792E80 /* Main.storyboard in Resources */,
 			);
@@ -348,6 +355,7 @@
 				BF5787F22334890C0088EC33 /* SentenceListeningDetailsView.swift in Sources */,
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
+				BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */,
 				BF5787F32334890C0088EC33 /* WordListening.swift in Sources */,
 				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
 				BF5787FE2334CE040088EC33 /* BooksChooseController.swift in Sources */,
