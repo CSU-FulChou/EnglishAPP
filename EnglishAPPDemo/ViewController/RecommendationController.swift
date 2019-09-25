@@ -8,8 +8,9 @@
 
 import UIKit
 
-class RecommendationController: UIViewController {
-    @IBOutlet weak var testView: UIView!
+
+class RecommendationController: UIViewController{
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,15 +31,36 @@ class RecommendationController: UIViewController {
         bg_HeadView.addSubview(backButton)
         
         self.view.addSubview(bg_HeadView)
+        
+        
         // Do any additional setup after loading the view.
 
-    let test = RecommandationCellView(frame: CGRect(x: 40, y: 90, width: 70, height: 70))
-        self.view.addSubview(test)
+//    let test = RecommandationCellView(frame: CGRect(x: 40, y: 90, width: 300, height: 300))
+//        self.view.addSubview(test)
+        let myView = Bundle.main.loadNibNamed("RecommandationCellView", owner: nil, options: nil)?.first as? RecommandationCellView
+        
+        myView?.frame = CGRect(x: 0, y: 90*Y_, width: SCREEN_WIDTH, height: 100*Y_)
+        
+        if myView != nil {
+            setBottomBorder(UIView: myView!)
+            self.view.addSubview(myView!)
+        }
+        
         
                 
     }
     
+    func setBottomBorder(UIView:UIView){
+        let border = CALayer()
+        let width = CGFloat(1.0)
+        border.borderColor = UIColor(hexString: "#E2E2E2").cgColor
+        border.frame = CGRect(x: -10, y: UIView.frame.size.height - width, width:  UIView.frame.size.width+20, height: UIView.frame.size.height)
 
+        border.borderWidth = width
+        UIView.layer.addSublayer(border)
+        UIView.layer.masksToBounds = true
+    }
+    
     /*
     // MARK: - Navigation
 

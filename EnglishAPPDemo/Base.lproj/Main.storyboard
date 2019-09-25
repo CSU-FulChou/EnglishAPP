@@ -221,7 +221,7 @@
                                 <state key="normal" backgroundImage="bt_symExercise"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-29-pq8" userLabel="学习报告">
-                                <rect key="frame" x="300" y="287" width="95" height="52"/>
+                                <rect key="frame" x="301" y="287" width="95" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="bt_startLearn"/>
                             </button>
@@ -786,19 +786,9 @@
                     <view key="view" contentMode="scaleToFill" id="O7G-zx-b5l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ez7-JM-wwJ" customClass="RecommandationCellView" customModule="EnglishAPPDemo" customModuleProvider="target">
-                                <rect key="frame" x="56" y="107" width="306" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sBy-7G-BXO"/>
                     </view>
-                    <connections>
-                        <outlet property="testView" destination="ez7-JM-wwJ" id="Ky2-b9-1Fn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCB-4r-bY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
