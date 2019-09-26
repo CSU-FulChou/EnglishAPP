@@ -45,9 +45,7 @@ class RecommendationController: UIViewController{
             setBottomBorder(UIView: myView!)
             self.view.addSubview(myView!)
         }
-        
-        
-                
+           
     }
     
     func setBottomBorder(UIView:UIView){
