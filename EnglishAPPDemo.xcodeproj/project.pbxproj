@@ -17,6 +17,8 @@
 		BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */; };
 		BF156FEF233E3A4400FDD8BB /* BlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */; };
 		BF156FF1233E3F3C00FDD8BB /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */; };
+		BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FF2233E603200FDD8BB /* RechargeHintView.swift */; };
+		BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */; };
 		BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */; };
 		BF1A6A312338A94F00C3A908 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A302338A94F00C3A908 /* Define.swift */; };
 		BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */; };
@@ -68,6 +70,8 @@
 		BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellHeadView.xib; sourceTree = "<group>"; };
 		BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopup.swift; sourceTree = "<group>"; };
 		BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		BF156FF2233E603200FDD8BB /* RechargeHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeHintView.swift; sourceTree = "<group>"; };
+		BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RechargeHintView.xib; sourceTree = "<group>"; };
 		BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBooksView.swift; sourceTree = "<group>"; };
 		BF1A6A302338A94F00C3A908 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionFeedbackController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				BF156FE8233D088A00FDD8BB /* StartView.swift */,
 				BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */,
 				BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */,
+				BF156FF2233E603200FDD8BB /* RechargeHintView.swift */,
+				BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
 				BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */,
+				BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */,
 				BF919B79231CA45600792E80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */,
 				BF156FE1233BAAF500FDD8BB /* learnPopup.swift in Sources */,
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
 				BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */,

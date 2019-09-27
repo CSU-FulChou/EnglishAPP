@@ -97,6 +97,23 @@ class MyShelfController: UIViewController {
         cancelBtn.isHidden = true;
         
         // Do any additional setup after loading the view.
+        
+        let testView = Bundle.main.loadNibNamed("RechargeHintView", owner: nil, options:nil)?.first as? RechargeHintView
+        testView?.frame.origin = CGPoint(x:108*X_, y: 306.5*Y_)
+        if testView != nil {
+            let bgView = UIView()
+            bgView.frame = self.view.bounds
+            bgView.backgroundColor =
+                UIColor(white: 0.1, alpha: 0.5)
+            
+                //UIColor(red: 126, green: 126, blue: 126, alpha: 0.2)
+            self.view.addSubview(bgView)
+            testView?.backgroundColor =
+                UIColor(white: 0.1, alpha: 0)
+                //UIColor(red: 126, green: 126, blue: 126, alpha: 0.5)
+            bgView.addSubview(testView!)
+        }
+        
     }
     @objc func clicked(_ sender:UIButton){
         if sender.currentTitle == "编辑" {
