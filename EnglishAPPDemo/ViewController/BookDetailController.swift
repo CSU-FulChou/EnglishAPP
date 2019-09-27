@@ -11,6 +11,7 @@ import UIKit
 class BookDetailController: UIViewController {
 
     @IBOutlet weak var chooseUnitBtn: UIButton!
+    @IBOutlet weak var contentsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(hexString: "fafafa")
@@ -38,6 +39,23 @@ class BookDetailController: UIViewController {
         chooseUnitBtn.layer.borderWidth = 0.5
         chooseUnitBtn.layer.masksToBounds = true
         chooseUnitBtn.layer.cornerRadius = 13*Y_;
+        
+        for index in 0...2{
+            let test = Bundle.main.loadNibNamed("ListeningCellView", owner: nil, options: nil)?.first as? ListeningCellView
+            test?.enContent.text = "try say hello"
+            test?.frame = CGRect(x: 40*X_, y: 180*Y_+CGFloat(index)*150, width: 300*X_, height: 130*Y_)
+            if test != nil {
+                contentsView.addSubview(test!)
+            }
+        }
+        let headListeningView = Bundle.main.loadNibNamed("ListeningCellHeadView", owner: nil, options: nil)?.first as? ListeningCellHeadView
+            headListeningView?.frame = CGRect(x: 90*X_, y: 15*Y_, width: 240*X_, height: 160*Y_)
+        if headListeningView != nil{
+            contentsView.addSubview(headListeningView!)
+        }
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

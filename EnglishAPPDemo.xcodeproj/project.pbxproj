@@ -12,7 +12,11 @@
 		BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */; };
 		BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */; };
 		BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */; };
-		BF156FE9233D088A00FDD8BB /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE8233D088A00FDD8BB /* Start.swift */; };
+		BF156FE9233D088A00FDD8BB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE8233D088A00FDD8BB /* StartView.swift */; };
+		BF156FEB233DC9D300FDD8BB /* ListeningCellHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */; };
+		BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */; };
+		BF156FEF233E3A4400FDD8BB /* BlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */; };
+		BF156FF1233E3F3C00FDD8BB /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */; };
 		BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */; };
 		BF1A6A312338A94F00C3A908 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A302338A94F00C3A908 /* Define.swift */; };
 		BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */; };
@@ -59,7 +63,11 @@
 		BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellView.swift; sourceTree = "<group>"; };
 		BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellView.xib; sourceTree = "<group>"; };
-		BF156FE8233D088A00FDD8BB /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		BF156FE8233D088A00FDD8BB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellHeadView.swift; sourceTree = "<group>"; };
+		BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellHeadView.xib; sourceTree = "<group>"; };
+		BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopup.swift; sourceTree = "<group>"; };
+		BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBooksView.swift; sourceTree = "<group>"; };
 		BF1A6A302338A94F00C3A908 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionFeedbackController.swift; sourceTree = "<group>"; };
@@ -145,7 +153,9 @@
 				BF91D1DC233A747000132BAE /* RecommandationCellView.xib */,
 				BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */,
 				BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */,
-				BF156FE8233D088A00FDD8BB /* Start.swift */,
+				BF156FE8233D088A00FDD8BB /* StartView.swift */,
+				BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */,
+				BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +225,8 @@
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
 				BF1A6A302338A94F00C3A908 /* Define.swift */,
 				BF156FE0233BAAF500FDD8BB /* learnPopup.swift */,
+				BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */,
+				BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */,
 			);
 			path = EnglishAPPDemo;
 			sourceTree = "<group>";
@@ -292,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */,
 				BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */,
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
@@ -359,18 +372,21 @@
 				BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */,
 				BF5787F42334890C0088EC33 /* UnitChooseView.swift in Sources */,
 				BF5787EB2334890C0088EC33 /* SentenceTestView.swift in Sources */,
+				BF156FEB233DC9D300FDD8BB /* ListeningCellHeadView.swift in Sources */,
 				BF66091223399EF000915F16 /* Inch.swift in Sources */,
 				BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */,
 				BF5787EC2334890C0088EC33 /* NewItemViewController.swift in Sources */,
 				BF578804233504E00088EC33 /* MyShelfController.swift in Sources */,
+				BF156FF1233E3F3C00FDD8BB /* PopupViewController.swift in Sources */,
 				BF5787F22334890C0088EC33 /* SentenceListeningDetailsView.swift in Sources */,
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
+				BF156FEF233E3A4400FDD8BB /* BlurPopup.swift in Sources */,
 				BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */,
 				BF5787F32334890C0088EC33 /* WordListening.swift in Sources */,
 				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
 				BF5787FE2334CE040088EC33 /* BooksChooseController.swift in Sources */,
-				BF156FE9233D088A00FDD8BB /* Start.swift in Sources */,
+				BF156FE9233D088A00FDD8BB /* StartView.swift in Sources */,
 				BF5787FC2334CC920088EC33 /* NoServiceController.swift in Sources */,
 				BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */,
 				BF5787F82334C3C10088EC33 /* RegisterController.swift in Sources */,
