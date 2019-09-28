@@ -33,6 +33,8 @@ class BookDetailController: UIViewController {
         
         let settingButton = UIButton(frame: CGRect(x: 380.5*X_, y: 44.5, width: 20, height: 21))
         settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
+        settingButton.addTarget(self, action: #selector(clickSettingBtn), for: UIControl.Event.touchUpInside)
+        
         bg_HeadView.addSubview(settingButton)
         self.view.addSubview(bg_HeadView)
         chooseUnitBtn.layer.borderColor = UIColor(hexString: "#FF6C69").cgColor
@@ -48,6 +50,7 @@ class BookDetailController: UIViewController {
                 contentsView.addSubview(test!)
             }
         }
+        
         let headListeningView = Bundle.main.loadNibNamed("ListeningCellHeadView", owner: nil, options: nil)?.first as? ListeningCellHeadView
             headListeningView?.frame = CGRect(x: 90*X_, y: 15*Y_, width: 240*X_, height: 160*Y_)
         if headListeningView != nil{
@@ -55,8 +58,21 @@ class BookDetailController: UIViewController {
         }
         
         
-        
         // Do any additional setup after loading the view.
+    }
+    @objc func clickSettingBtn(_ sender:Any)->Void{
+        print("111")
+    }
+
+    @IBAction func test(_ sender: Any) {
+        let settingView = Bundle.main.loadNibNamed("SettingView", owner: nil, options: nil)?.first as? SettingView
+        if settingView != nil {
+            settingView?.frame.origin = CGPoint(x: 150*X_, y: 70*Y_)
+            self.view.addSubview(settingView!)
+                  print("111")
+        }
+      
+
     }
     
 

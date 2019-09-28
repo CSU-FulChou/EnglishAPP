@@ -42,6 +42,8 @@
 		BF578804233504E00088EC33 /* MyShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF578803233504E00088EC33 /* MyShelfController.swift */; };
 		BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5788072335088B0088EC33 /* BookInShelf.swift */; };
 		BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */; };
+		BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5C1776233F0C51007B8DCC /* SettingView.swift */; };
+		BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5C1778233F0C6E007B8DCC /* SettingView.xib */; };
 		BF66091223399EF000915F16 /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66091023399EF000915F16 /* Inch.swift */; };
 		BF66091323399EF000915F16 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66091123399EF000915F16 /* Auto.swift */; };
 		BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */; };
@@ -95,6 +97,8 @@
 		BF578803233504E00088EC33 /* MyShelfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShelfController.swift; sourceTree = "<group>"; };
 		BF5788072335088B0088EC33 /* BookInShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInShelf.swift; sourceTree = "<group>"; };
 		BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCreditController.swift; sourceTree = "<group>"; };
+		BF5C1776233F0C51007B8DCC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		BF5C1778233F0C6E007B8DCC /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		BF66090F23399EF000915F16 /* AutoInch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoInch.h; sourceTree = "<group>"; };
 		BF66091023399EF000915F16 /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
 		BF66091123399EF000915F16 /* Auto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */,
 				BF156FF2233E603200FDD8BB /* RechargeHintView.swift */,
 				BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */,
+				BF5C1776233F0C51007B8DCC /* SettingView.swift */,
+				BF5C1778233F0C6E007B8DCC /* SettingView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */,
+				BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */,
 				BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */,
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
@@ -372,6 +379,7 @@
 				BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */,
 				BF156FE1233BAAF500FDD8BB /* learnPopup.swift in Sources */,
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
+				BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */,
 				BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */,
 				BF5788022334DB180088EC33 /* BookCell.swift in Sources */,
 				BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */,

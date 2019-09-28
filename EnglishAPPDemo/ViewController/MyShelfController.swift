@@ -110,11 +110,23 @@ class MyShelfController: UIViewController {
             self.view.addSubview(bgView)
             testView?.backgroundColor =
                 UIColor(white: 0.1, alpha: 0)
-                //UIColor(red: 126, green: 126, blue: 126, alpha: 0.5)
+         //   testView?.cancelBtn.addTarget(self, action: #selector(cancelHint), for: UIControl.Event.touchUpInside)
+            
+
             bgView.addSubview(testView!)
         }
         
     }
+    
+    
+//    @objc func cancelHint(_ sender:UIButton){
+//
+//        self.cancelBtn.titleLabel?.text = "hhh"
+//        print("kajfkldsajflkjs")
+//       }
+    
+    
+    
     @objc func clicked(_ sender:UIButton){
         if sender.currentTitle == "编辑" {
             sender.setTitle("取消", for: UIControl.State.normal)
