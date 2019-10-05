@@ -2,6 +2,6 @@
 source 'https://git.coding.net/hging/Specs.git'
 platform :ios, '12.0'
 target 'EnglishAPPDemo' do
-pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug'],
+pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
 #pod "JKBlurPopup"`
 end

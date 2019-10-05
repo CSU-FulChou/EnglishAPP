@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A17FAE916F70BFB1C2E83E72 /* libPods-EnglishAPPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */; };
-		BF156FE1233BAAF500FDD8BB /* learnPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE0233BAAF500FDD8BB /* learnPopup.swift */; };
 		BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */; };
 		BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */; };
 		BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */; };
 		BF156FE9233D088A00FDD8BB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE8233D088A00FDD8BB /* StartView.swift */; };
 		BF156FEB233DC9D300FDD8BB /* ListeningCellHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */; };
 		BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */; };
-		BF156FEF233E3A4400FDD8BB /* BlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */; };
-		BF156FF1233E3F3C00FDD8BB /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */; };
 		BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FF2233E603200FDD8BB /* RechargeHintView.swift */; };
 		BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */; };
 		BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */; };
 		BF1A6A312338A94F00C3A908 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A302338A94F00C3A908 /* Define.swift */; };
 		BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */; };
+		BF22BABD23486614002DE170 /* OwnerCenterControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */; };
+		BF22BABF23486F22002DE170 /* OwnerMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BABE23486F22002DE170 /* OwnerMenuTableViewCell.swift */; };
+		BF22BAC3234881ED002DE170 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BAC2234881ED002DE170 /* HomePageController.swift */; };
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
 		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
 		BF5787E92334890C0088EC33 /* WordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787DD2334890C0088EC33 /* WordTestView.swift */; };
@@ -63,20 +63,20 @@
 /* Begin PBXFileReference section */
 		7564D5E222C353C0A5F46886 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.debug.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B431AB5E69C77909FDDBBB /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.release.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BF156FE0233BAAF500FDD8BB /* learnPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnPopup.swift; sourceTree = "<group>"; };
 		BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellView.swift; sourceTree = "<group>"; };
 		BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellView.xib; sourceTree = "<group>"; };
 		BF156FE8233D088A00FDD8BB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		BF156FEA233DC9D300FDD8BB /* ListeningCellHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellHeadView.swift; sourceTree = "<group>"; };
 		BF156FEC233DC9E400FDD8BB /* ListeningCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellHeadView.xib; sourceTree = "<group>"; };
-		BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopup.swift; sourceTree = "<group>"; };
-		BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		BF156FF2233E603200FDD8BB /* RechargeHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeHintView.swift; sourceTree = "<group>"; };
 		BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RechargeHintView.xib; sourceTree = "<group>"; };
 		BF1A6A2E2338605B00C3A908 /* ErrorBooksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBooksView.swift; sourceTree = "<group>"; };
 		BF1A6A302338A94F00C3A908 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionFeedbackController.swift; sourceTree = "<group>"; };
+		BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCenterControllerController.swift; sourceTree = "<group>"; };
+		BF22BABE23486F22002DE170 /* OwnerMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerMenuTableViewCell.swift; sourceTree = "<group>"; };
+		BF22BAC2234881ED002DE170 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
 		BF5787DD2334890C0088EC33 /* WordTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTestView.swift; sourceTree = "<group>"; };
@@ -154,6 +154,7 @@
 		BF5787D82333AE5E0088EC33 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF22BABE23486F22002DE170 /* OwnerMenuTableViewCell.swift */,
 				BF5787D62333AB460088EC33 /* UnitChooseCell.swift */,
 				BF5788012334DB180088EC33 /* BookCell.swift */,
 				BF5788072335088B0088EC33 /* BookInShelf.swift */,
@@ -197,6 +198,8 @@
 				BF6FD50323365695004021D1 /* AboutUsController.swift */,
 				BF1A6A322338E51700C3A908 /* OpinionFeedbackController.swift */,
 				BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */,
+				BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */,
+				BF22BAC2234881ED002DE170 /* HomePageController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -236,9 +239,6 @@
 				BF919B7F231CA45800792E80 /* Info.plist */,
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
 				BF1A6A302338A94F00C3A908 /* Define.swift */,
-				BF156FE0233BAAF500FDD8BB /* learnPopup.swift */,
-				BF156FEE233E3A4400FDD8BB /* BlurPopup.swift */,
-				BF156FF0233E3F3C00FDD8BB /* PopupViewController.swift */,
 			);
 			path = EnglishAPPDemo;
 			sourceTree = "<group>";
@@ -377,12 +377,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */,
-				BF156FE1233BAAF500FDD8BB /* learnPopup.swift in Sources */,
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
 				BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */,
 				BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */,
+				BF22BABD23486614002DE170 /* OwnerCenterControllerController.swift in Sources */,
 				BF5788022334DB180088EC33 /* BookCell.swift in Sources */,
 				BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */,
+				BF22BABF23486F22002DE170 /* OwnerMenuTableViewCell.swift in Sources */,
 				BF66091323399EF000915F16 /* Auto.swift in Sources */,
 				BF919B76231CA45600792E80 /* ViewController.swift in Sources */,
 				BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */,
@@ -393,11 +394,9 @@
 				BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */,
 				BF5787EC2334890C0088EC33 /* NewItemViewController.swift in Sources */,
 				BF578804233504E00088EC33 /* MyShelfController.swift in Sources */,
-				BF156FF1233E3F3C00FDD8BB /* PopupViewController.swift in Sources */,
 				BF5787F22334890C0088EC33 /* SentenceListeningDetailsView.swift in Sources */,
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
-				BF156FEF233E3A4400FDD8BB /* BlurPopup.swift in Sources */,
 				BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */,
 				BF5787F32334890C0088EC33 /* WordListening.swift in Sources */,
 				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
@@ -406,6 +405,7 @@
 				BF5787FC2334CC920088EC33 /* NoServiceController.swift in Sources */,
 				BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */,
 				BF5787F82334C3C10088EC33 /* RegisterController.swift in Sources */,
+				BF22BAC3234881ED002DE170 /* HomePageController.swift in Sources */,
 				BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */,
 				BF5787F12334890C0088EC33 /* WordListeningDetails.swift in Sources */,
 				BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */,
