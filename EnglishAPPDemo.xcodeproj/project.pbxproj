@@ -22,6 +22,8 @@
 		BF22BABD23486614002DE170 /* OwnerCenterControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */; };
 		BF22BABF23486F22002DE170 /* OwnerMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BABE23486F22002DE170 /* OwnerMenuTableViewCell.swift */; };
 		BF22BAC3234881ED002DE170 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BAC2234881ED002DE170 /* HomePageController.swift */; };
+		BF22BACD234982D7002DE170 /* ChooseLessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */; };
+		BF22BACF234982EC002DE170 /* ChooseLessionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */; };
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
 		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
 		BF5787E92334890C0088EC33 /* WordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787DD2334890C0088EC33 /* WordTestView.swift */; };
@@ -77,6 +79,8 @@
 		BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCenterControllerController.swift; sourceTree = "<group>"; };
 		BF22BABE23486F22002DE170 /* OwnerMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerMenuTableViewCell.swift; sourceTree = "<group>"; };
 		BF22BAC2234881ED002DE170 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLessionsView.swift; sourceTree = "<group>"; };
+		BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLessionsView.xib; sourceTree = "<group>"; };
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
 		BF5787DD2334890C0088EC33 /* WordTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTestView.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				BF156FF4233E605A00FDD8BB /* RechargeHintView.xib */,
 				BF5C1776233F0C51007B8DCC /* SettingView.swift */,
 				BF5C1778233F0C6E007B8DCC /* SettingView.xib */,
+				BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */,
+				BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
 				BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */,
 				BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */,
+				BF22BACF234982EC002DE170 /* ChooseLessionsView.xib in Resources */,
 				BF919B79231CA45600792E80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +415,7 @@
 				BF22BAC3234881ED002DE170 /* HomePageController.swift in Sources */,
 				BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */,
 				BF5787F12334890C0088EC33 /* WordListeningDetails.swift in Sources */,
+				BF22BACD234982D7002DE170 /* ChooseLessionsView.swift in Sources */,
 				BF1A6A2F2338605B00C3A908 /* ErrorBooksView.swift in Sources */,
 				BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */,
 				BF5787FA2334CB1A0088EC33 /* RecommendationController.swift in Sources */,

@@ -8,48 +8,18 @@
 
 import UIKit
 // 还没有实现二级列表。
-class TopUpRecordController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
-    
+class TopUpRecordController: UIViewController{
     @IBOutlet weak var manu: UITableView!
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let initIdentifier = "Cell"
-        
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: initIdentifier)
-        
-        cell.textLabel?.text = "本月"
-        
-        cell.detailTextLabel?.text = "测试\(indexPath.row)"
-        cell.imageView!.layer.cornerRadius = 40
-        
-        cell.imageView!.layer.masksToBounds = true
-        return cell
-    }
-    // param mark-- delegate
-    func numberOfSectionsInTableView(tableView:UITableView) -> Int {
-        return 1
-    }
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 60
-    }
-    
-    
-    
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         manu.dataSource = self
         manu.delegate = self
+        manu.separatorStyle = .none
 
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: 375, height: 75)
+        bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 75*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
         //头部标签。
         let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
@@ -79,5 +49,49 @@ class TopUpRecordController: UIViewController,UITableViewDataSource,UITableViewD
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+extension TopUpRecordController : UITableViewDelegate,UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let initIdentifier = "Cell"
+        
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: initIdentifier)
+        
+        cell.textLabel?.text = "本月"
+        
+        cell.detailTextLabel?.text = "充值50元，送1000学分\(indexPath.row)"
+        
+        return cell
+    }
+    
+    // param mark-- delegate
+    func numberOfSections(in tableView: UITableView) -> Int {
+        3;
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let head = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 50))
+        head.backgroundColor = UIColor(hexString: "#F0F0F0")
+        let headTitleLabel = UILabel(frame: CGRect(x: 20, y: 10, width: 59, height: 20))
+        headTitleLabel.text = "本月\(section)"
+        head.addSubview(headTitleLabel)
+        return head
+    }
+    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 40
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//    }
+//
+    
 
 }

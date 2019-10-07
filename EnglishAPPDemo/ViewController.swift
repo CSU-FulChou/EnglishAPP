@@ -83,13 +83,12 @@ class ViewController: UIViewController {
             recognizer.view!.frame.origin.x = positionX > 0 ? 0: positionX
            // self.menuViewController?.view.frame.origin.x +=  recognizer.view!.frame.origin.x
             
-            print(self.menuViewController?.view.frame.origin.x)
+           // print(self.menuViewController?.view.frame.origin.x)
             recognizer.setTranslation(.zero, in: view)
             
         // 如果滑动结束
         case .ended:
             //根据页面滑动是否过半，判断后面是自动展开还是收缩
-           // print(-view.bounds.size.width/5)
             let hasMovedhanHalfway = recognizer.view!.frame.origin.x < -view.bounds.size.width/3
             
             animateMainView(shouldExpand: hasMovedhanHalfway)
@@ -160,9 +159,26 @@ class ViewController: UIViewController {
     //给主页面边缘添加、取消阴影
     func showShadowForMainViewController(shouldShowShadow: Bool) {
         if (shouldShowShadow) {
-            mainViewController.view.layer.shadowOpacity = 0.8
+            //mainViewController.view.layer.shadowOpacity = 0.8
+            // 避免添加两遍 那个阴影的bgView
+            if  mainViewController.view.viewWithTag(100) == nil {
+                let  bgView = UIView(frame: mainViewController.view.bounds)
+                bgView.accessibilityIdentifier = "hhhhh"
+                bgView.tag = 100
+                bgView.backgroundColor = UIColor(white: 0.1, alpha: 0.5)
+                mainViewController.view.addSubview(bgView)
+            }
+            
         } else {
-            mainViewController.view.layer.shadowOpacity = 0.0
+            
+            //mainViewController.view.layer.shadowOpacity = 0.0
+            if let viewWithTag = mainViewController.view.viewWithTag(100) {
+                viewWithTag.removeFromSuperview()
+                 print("Yes!")
+               }else{
+                   print("No!")
+               }
+        
         }
     }
     

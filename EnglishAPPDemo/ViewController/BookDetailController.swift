@@ -11,10 +11,18 @@ import UIKit
 class BookDetailController: UIViewController {
     var settingView : SettingView?
     var bgBlackView : UIView?
+    var chooseLessionsView : ChooseLessionsView?
     @IBOutlet weak var chooseUnitBtn: UIButton!
     @IBOutlet weak var contentsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let viewGestureRecongnizer = UITapGestureRecognizer(target: self, action: #selector(noChoose(sender:)))
+        viewGestureRecongnizer.delegate = self
+        viewGestureRecongnizer.numberOfTapsRequired = 1
+        self.view.isUserInteractionEnabled = true
+        self.view.addGestureRecognizer(viewGestureRecongnizer)
+        
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let headView = UIView()
            headView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 70*Y_)
@@ -57,6 +65,10 @@ class BookDetailController: UIViewController {
         chooseUnitBtn.layer.masksToBounds = true
         chooseUnitBtn.layer.cornerRadius = 13*Y_;
         
+        chooseUnitBtn.addTarget(self, action: #selector(chooseLession), for: .touchUpInside)
+        
+        
+        
         for index in 0...2{
             let test = Bundle.main.loadNibNamed("ListeningCellView", owner: nil, options: nil)?.first as? ListeningCellView
             test?.enContent.text = "try say hello"
@@ -75,6 +87,32 @@ class BookDetailController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    @objc func chooseLession(){
+        //print("sdfsdf")
+        chooseLessionsView = Bundle.main.loadNibNamed("ChooseLessionsView", owner: nil, options: nil)?.first as? ChooseLessionsView
+        chooseLessionsView?.frame.origin = CGPoint(x: 8*X_, y: 110*Y_)
+        chooseLessionsView?.tag = 100
+        if chooseLessionsView != nil{
+            self.view.addSubview(chooseLessionsView!)
+        }
+        
+    }
+    @objc func noChoose(sender:UITapGestureRecognizer){
+        
+        
+//        if sender {
+//            <#code#>
+//        }
+      if  let viewWithtag = self.view.viewWithTag(100){
+        viewWithtag.removeFromSuperview()
+            if chooseLessionsView != nil{
+                       chooseLessionsView = nil;
+                   }
+        }
+       
+    }
+    
     @objc func clickSettingBtn()->Void{
         if settingView == nil{
             bgBlackView = UIView()
@@ -104,13 +142,6 @@ class BookDetailController: UIViewController {
  
     }
 
-//    @IBAction func test(_ sender: Any) {
-//
-//        }
-      
-
-    
-    
 
     /*
     // MARK: - Navigation
@@ -123,3 +154,17 @@ class BookDetailController: UIViewController {
     */
 
 }
+
+extension BookDetailController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if self.view.viewWithTag(100) != nil{
+            if touch.view?.isDescendant(of: self.view.viewWithTag(100)!) == true {
+                //print("12325")
+                return false
+            }
+        }
+        // print("44444")
+        return true
+    }
+}
+
