@@ -16,13 +16,13 @@ class BookDetailController: UIViewController {
     @IBOutlet weak var contentsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // 给全局绑定一个点击函数
         let viewGestureRecongnizer = UITapGestureRecognizer(target: self, action: #selector(noChoose(sender:)))
         viewGestureRecongnizer.delegate = self
         viewGestureRecongnizer.numberOfTapsRequired = 1
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(viewGestureRecongnizer)
-        
+        //
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         let headView = UIView()
            headView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 70*Y_)
@@ -31,9 +31,7 @@ class BookDetailController: UIViewController {
         bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 70*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(clickSettingBtn))
-        bg_HeadView.isUserInteractionEnabled = true
-        bg_HeadView.addGestureRecognizer(tap)
+
         
         //
         headView.addSubview(bg_HeadView)
@@ -48,16 +46,19 @@ class BookDetailController: UIViewController {
         
         let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
-        headView.addSubview(backButton)
-        
+        backButton.addTarget(self, action: #selector(popBack), for: .touchUpInside)
+
         let settingButton = UIButton(frame: CGRect(x: 380.5*X_, y: 44.5, width: 20, height: 21))
         settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
         
         settingButton.addTarget(self, action: #selector(clickSettingBtn), for: UIControl.Event.touchUpInside)
-        
-        headView.addSubview(settingButton)
+      //  let tap = UITapGestureRecognizer(target: self, action: #selector(clickSettingBtn))
+
         
         self.view.addSubview(headView)
+        self.view.addSubview(backButton)
+        self.view.addSubview(settingButton)
+       
         
         //--------------------------------------------
         chooseUnitBtn.layer.borderColor = UIColor(hexString: "#FF6C69").cgColor
@@ -88,6 +89,7 @@ class BookDetailController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // 点击了课程选择：
     @objc func chooseLession(){
         //print("sdfsdf")
         chooseLessionsView = Bundle.main.loadNibNamed("ChooseLessionsView", owner: nil, options: nil)?.first as? ChooseLessionsView
@@ -98,20 +100,32 @@ class BookDetailController: UIViewController {
         }
         
     }
+    
     @objc func noChoose(sender:UITapGestureRecognizer){
         
         
-//        if sender {
-//            <#code#>
-//        }
       if  let viewWithtag = self.view.viewWithTag(100){
         viewWithtag.removeFromSuperview()
             if chooseLessionsView != nil{
                        chooseLessionsView = nil;
-                   }
-        }
+         }
+     }
+        // control disappear
+        if  let viewWithtag = self.view.viewWithTag(101){
+              viewWithtag.removeFromSuperview()
+                  if bgBlackView != nil{
+                             bgBlackView = nil;
+               }
+           }
+        
+        if  let viewWithtag = self.view.viewWithTag(102){
+              viewWithtag.removeFromSuperview()
+                  if settingView != nil{
+                             settingView = nil;
+               }
+           }
        
-    }
+ }
     
     @objc func clickSettingBtn()->Void{
         if settingView == nil{
@@ -119,9 +133,12 @@ class BookDetailController: UIViewController {
             bgBlackView?.frame = self.view.bounds
             bgBlackView?.backgroundColor =
                 UIColor(white: 0.1, alpha: 0.5)
+            bgBlackView?.tag = 101
             self.view.addSubview(bgBlackView!)
+            
             settingView = Bundle.main.loadNibNamed("SettingView", owner: nil, options: nil)?.first as? SettingView
             settingView?.frame.origin = CGPoint(x: 150*X_, y: 70*Y_)
+            settingView?.tag = 102
             self.view.addSubview(settingView!)
             
         }else{
@@ -141,6 +158,10 @@ class BookDetailController: UIViewController {
         }
  
     }
+    
+    @objc func popBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
 
     /*
@@ -156,14 +177,19 @@ class BookDetailController: UIViewController {
 }
 
 extension BookDetailController: UIGestureRecognizerDelegate {
+    // 控制点击函数，在弹出的view上点击不起作用；
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        
         if self.view.viewWithTag(100) != nil{
             if touch.view?.isDescendant(of: self.view.viewWithTag(100)!) == true {
-                //print("12325")
                 return false
             }
         }
-        // print("44444")
+        if self.view.viewWithTag(102) != nil{
+            if touch.view?.isDescendant(of: self.view.viewWithTag(102)!) == true {
+                return false
+            }
+        }
         return true
     }
 }

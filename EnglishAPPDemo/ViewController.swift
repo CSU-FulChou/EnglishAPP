@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         //添加主页面
         mainViewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "HomeView")
@@ -72,13 +72,9 @@ class ViewController: UIViewController {
             
         // 如果是正在滑动，则偏移主视图的坐标实现跟随手指位置移动
         case .changed:
-           
-
 
             let positionX = recognizer.view!.frame.origin.x +
                 recognizer.translation(in: view).x
-            
-             
             //页面滑到最左侧的话就,不许继续往左移动
             recognizer.view!.frame.origin.x = positionX > 0 ? 0: positionX
            // self.menuViewController?.view.frame.origin.x +=  recognizer.view!.frame.origin.x
