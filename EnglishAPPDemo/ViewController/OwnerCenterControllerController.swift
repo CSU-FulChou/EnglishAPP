@@ -24,6 +24,23 @@ class OwnerCenterControllerController: UIViewController,UITableViewDelegate,UITa
         // Do any additional setup after loading the view.
     }
     
+    
+
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+extension OwnerCenterControllerController{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count;
     }
@@ -40,17 +57,39 @@ class OwnerCenterControllerController: UIViewController,UITableViewDelegate,UITa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        switch indexPath.row {
+        case 0:
+            let topUpCreditVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopUpCreditController")
+            self.navigationController!.pushViewController(topUpCreditVC, animated: true)
+        case 1:
+            let topUpRecordVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopUpRecordController")
+            self.navigationController!.pushViewController(topUpRecordVC, animated: true)
+        case 2:
+            let creditAboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreditAboutController")
+            self.navigationController!.pushViewController(creditAboutVC, animated: true)
+        case 3:
+                let creditAboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreditAboutController")
+                self.navigationController!.pushViewController(creditAboutVC, animated: true)
+            case 6:
+                    let opinionFeedbackVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OpinionFeedbackController")
+                    self.navigationController!.pushViewController(opinionFeedbackVC, animated: true)
+            case 7:
+                    let recommendationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecommendationController")
+                    self.navigationController!.pushViewController(recommendationVC, animated: true)
+            
+            
+        default:
+            break
+        }
+        
+        
+        
+        
+//        if indexPath.row == 0{
+//            let topUpCreditVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TopUpCreditController")
+//            self.navigationController!.pushViewController(topUpCreditVC, animated: true)
+//        }
     }
-    */
-
 }

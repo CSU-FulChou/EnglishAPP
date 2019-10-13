@@ -27,12 +27,18 @@ class AboutUsController: UIViewController {
         
         let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
-        bg_HeadView.addSubview(backButton)
+        backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
+
+        
         
         self.view.addSubview(bg_HeadView)
+        self.view.addSubview(backButton)
         textView.font = UIFont(name:textView.font!.fontName, size:15)
         textView.textColor = UIColor(hexString: "#343434")
         textView.text = " “学伴”系列软件是针对课本同步学习的强大助手，能帮助同学快速掌握课程要点、巩固学习成果、强化知识记忆、提升考试成绩 "
     }
+    @objc func popBack(_ sender: Any) {
+           self.navigationController?.popViewController(animated: true)
+       }
 
 }

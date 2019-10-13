@@ -29,6 +29,8 @@ class HomePageController: UIViewController {
     }
     
     @IBAction func showOwnerCenter(_ sender: Any) {
+        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
+        self.navigationController!.pushViewController(loginVC, animated: true)
 //
 ////        addMenuViewController()
 ////         animateMainView(shouldExpand: hasMovedhanHalfway)

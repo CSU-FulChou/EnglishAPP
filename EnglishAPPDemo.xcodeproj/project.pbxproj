@@ -51,6 +51,7 @@
 		BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */; };
 		BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD50123365253004021D1 /* CreditAboutController.swift */; };
 		BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD50323365695004021D1 /* AboutUsController.swift */; };
+		BF86BB912352AFA600A23C2F /* HeadBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86BB902352AFA600A23C2F /* HeadBgView.swift */; };
 		BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B73231CA45600792E80 /* AppDelegate.swift */; };
 		BF919B76231CA45600792E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF919B75231CA45600792E80 /* ViewController.swift */; };
 		BF919B79231CA45600792E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B77231CA45600792E80 /* Main.storyboard */; };
@@ -109,6 +110,7 @@
 		BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpRecordController.swift; sourceTree = "<group>"; };
 		BF6FD50123365253004021D1 /* CreditAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditAboutController.swift; sourceTree = "<group>"; };
 		BF6FD50323365695004021D1 /* AboutUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsController.swift; sourceTree = "<group>"; };
+		BF86BB902352AFA600A23C2F /* HeadBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadBgView.swift; sourceTree = "<group>"; };
 		BF919B70231CA45600792E80 /* EnglishAPPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishAPPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF919B73231CA45600792E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF919B75231CA45600792E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				BF5C1778233F0C6E007B8DCC /* SettingView.xib */,
 				BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */,
 				BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */,
+				BF86BB902352AFA600A23C2F /* HeadBgView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				BF5787EA2334890C0088EC33 /* SentenceListeningChooseView.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,
 				BF5787E92334890C0088EC33 /* WordTestView.swift in Sources */,
+				BF86BB912352AFA600A23C2F /* HeadBgView.swift in Sources */,
 				BF1A6A312338A94F00C3A908 /* Define.swift in Sources */,
 				BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */,
 			);

@@ -18,8 +18,9 @@ class TopUpCreditController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = UIColor(hexString: "fafafa")
+        
+        
         let bg_HeadView = UIImageView()
         bg_HeadView.frame = CGRect(x: 0, y: 0, width:SCREEN_WIDTH, height: 75*Y_)
         bg_HeadView.image = UIImage(named: "background_head")
@@ -32,9 +33,11 @@ class TopUpCreditController: UIViewController {
         head.textAlignment = NSTextAlignment.center
         bg_HeadView.addSubview(head)
         
+        
         let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
-        bg_HeadView.addSubview(backButton)
+        backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
+
         
         let editBtn = UIButton(frame: CGRect(x: 330, y: 44.5, width: 40, height: 21))
         
@@ -43,6 +46,7 @@ class TopUpCreditController: UIViewController {
         editBtn.titleLabel?.textColor = UIColor.white
 
         self.view.addSubview(bg_HeadView)
+        self.view.addSubview(backButton)
         self.view.addSubview(editBtn)
         
         // 画虚线：
@@ -84,6 +88,9 @@ class TopUpCreditController: UIViewController {
         wxpayBtn.layer.borderColor = UIColor.clear.cgColor
         
     }
+    @objc func popBack(_ sender: Any) {
+           self.navigationController?.popViewController(animated: true)
+       }
     
 
     /*

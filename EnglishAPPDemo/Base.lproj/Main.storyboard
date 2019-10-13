@@ -291,7 +291,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="zTs-4Z-suk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1710.144927536232" y="-152.00892857142856"/>
+            <point key="canvasLocation" x="1710" y="-100"/>
         </scene>
         <!--BooksChoose-->
         <scene sceneID="ca7-PR-J4Z">
@@ -502,12 +502,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoi-o0-P49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="630.80357142857144"/>
+            <point key="canvasLocation" x="1817" y="889"/>
         </scene>
         <!--topUp-->
         <scene sceneID="OZ4-7G-IjV">
             <objects>
-                <viewController title="topUp" id="Jf0-rs-fzs" customClass="TopUpCreditController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopUpCreditController" title="topUp" id="Jf0-rs-fzs" customClass="TopUpCreditController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nbU-ZD-hgi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,7 +633,7 @@
         <!--TopUpRecord-->
         <scene sceneID="hf1-jU-kJZ">
             <objects>
-                <viewController title="TopUpRecord" id="ro5-pY-rsf" customClass="TopUpRecordController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopUpRecordController" title="TopUpRecord" id="ro5-pY-rsf" customClass="TopUpRecordController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2h-iy-ox6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -658,7 +658,7 @@
         <!--CreditAbout-->
         <scene sceneID="aYS-lV-2e1">
             <objects>
-                <viewController title="CreditAbout" id="UWn-aI-Z5t" customClass="CreditAboutController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditAboutController" title="CreditAbout" id="UWn-aI-Z5t" customClass="CreditAboutController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wkF-BP-RUb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,7 +716,7 @@
         <!--OpinionFeedback-->
         <scene sceneID="0s6-fC-4Ui">
             <objects>
-                <viewController title="OpinionFeedback" id="C9M-Of-sP6" customClass="OpinionFeedbackController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpinionFeedbackController" title="OpinionFeedback" id="C9M-Of-sP6" customClass="OpinionFeedbackController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dg8-FK-v43">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -871,7 +871,7 @@
         <!--RecommandSoft-->
         <scene sceneID="0Tv-se-Yyp">
             <objects>
-                <viewController title="RecommandSoft" id="JUg-sk-pOt" customClass="RecommendationController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecommendationController" title="RecommandSoft" id="JUg-sk-pOt" customClass="RecommendationController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O7G-zx-b5l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,47 +886,40 @@
         <!--Login-->
         <scene sceneID="mOT-xc-3pF">
             <objects>
-                <viewController title="Login" id="0CZ-iA-t8e" customClass="LoginController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" title="Login" id="0CZ-iA-t8e" customClass="LoginController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FJE-bf-vMj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zJs-Ru-Q1p">
-                                <rect key="frame" x="89" y="114" width="236" height="149"/>
+                                <rect key="frame" x="106" y="100" width="236" height="149"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUM-ut-AVX">
-                                <rect key="frame" x="39" y="254" width="296" height="30"/>
+                                <rect key="frame" x="51" y="257" width="296" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Bz-Bx-qua">
-                                <rect key="frame" x="39" y="320" width="296" height="30"/>
+                                <rect key="frame" x="51" y="323" width="296" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujN-GA-6ak">
-                                <rect key="frame" x="284" y="320" width="46" height="23"/>
+                                <rect key="frame" x="296" y="323" width="46" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <state key="normal" title="获取验证码"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+86" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-5z-vXf">
-                                <rect key="frame" x="9" y="260" width="26" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nt-Q8-Qku">
-                                <rect key="frame" x="279" y="358" width="56" height="23"/>
+                                <rect key="frame" x="291" y="361" width="56" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <state key="normal" title="使用密码登陆"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-P2-Aeg">
-                                <rect key="frame" x="149" y="686" width="78" height="30"/>
+                                <rect key="frame" x="168" y="687" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="遇到问题？">
@@ -934,19 +927,26 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-ZZ-0eb">
-                                <rect key="frame" x="49" y="518" width="276" height="27"/>
+                                <rect key="frame" x="59" y="510" width="296" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登入" backgroundImage="bg_login">
                                     <color key="titleColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+86" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxW-5z-vXf">
+                                <rect key="frame" x="17" y="263" width="26" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="centerX" secondItem="mVV-fS-VZo" secondAttribute="centerX" id="eP8-Bs-ebc"/>
-                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="leading" secondItem="mVV-fS-VZo" secondAttribute="leading" constant="89" id="eQv-gE-vSk"/>
-                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="top" secondItem="mVV-fS-VZo" secondAttribute="top" constant="70" id="k9t-cI-N5E"/>
-                            <constraint firstItem="mVV-fS-VZo" firstAttribute="bottom" secondItem="zJs-Ru-Q1p" secondAttribute="bottom" constant="599" id="lYX-UF-uvX"/>
+                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="centerX" secondItem="mVV-fS-VZo" secondAttribute="centerX" constant="17" id="eP8-Bs-ebc"/>
+                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="leading" secondItem="mVV-fS-VZo" secondAttribute="leading" constant="106" id="eQv-gE-vSk"/>
+                            <constraint firstItem="zJs-Ru-Q1p" firstAttribute="top" secondItem="mVV-fS-VZo" secondAttribute="top" constant="56" id="k9t-cI-N5E"/>
+                            <constraint firstItem="mVV-fS-VZo" firstAttribute="bottom" secondItem="zJs-Ru-Q1p" secondAttribute="bottom" constant="613" id="lYX-UF-uvX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mVV-fS-VZo"/>
                     </view>
@@ -957,7 +957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFO-ZG-iXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856.8" y="1594.5812807881773"/>
+            <point key="canvasLocation" x="1856.521739130435" y="1594.4196428571429"/>
         </scene>
         <!--Register-->
         <scene sceneID="9q0-UY-cTD">
