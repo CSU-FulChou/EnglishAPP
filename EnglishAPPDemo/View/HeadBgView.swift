@@ -14,10 +14,10 @@ class HeadBgView: UIImageView {
     init(frame:CGRect, withTitle title:String) {
 
         //头部标签。
-        headLable = UILabel(frame:  CGRect(x: 47.5,y: 40, width: 280, height: 30))
+        headLable = UILabel(frame:  CGRect(x: 67*X_,y: 25*Y_, width: 280*X_, height: 30*Y_))
         headLable.text = title
         headLable.textColor = UIColor.white
-        headLable.font = UIFont(name: "Helvetica Neue", size: 17)
+        headLable.font = UIFont(name: "Helvetica Neue", size: 18)
         headLable.textAlignment = NSTextAlignment.center
         super.init(frame: frame)
         self.image = UIImage(named: "background_head")

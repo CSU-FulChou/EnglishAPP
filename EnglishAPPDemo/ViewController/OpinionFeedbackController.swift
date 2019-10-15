@@ -10,9 +10,10 @@ import UIKit
 
 class OpinionFeedbackController: UIViewController, UITextViewDelegate {
     @IBOutlet var advise: [UILabel]!
-    @IBOutlet weak var selectBtns: UIButton!
+    
     @IBOutlet weak var feedBackText: UITextView!
     @IBOutlet weak var showNumLabel: UILabel!
+    @IBOutlet var selectBtns: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,21 @@ class OpinionFeedbackController: UIViewController, UITextViewDelegate {
        
         
         
-        showNumLabel.text = "0/300"
+       
         
+        showNumLabel.text = "0/300"
         self.view.addSubview(bg_HeadView)
         self.view.addSubview(backButton)
         feedBackText.delegate = self
-        selectBtns.layer.borderWidth = 0.5
-        selectBtns.layer.borderColor = UIColor(hexString: "#BABABA").cgColor
+        
+       // selectBtns.layer.borderWidth = 0.5
+        //selectBtns.layer.borderColor = UIColor(hexString: "#BABABA").cgColor
+        for btn in selectBtns{
+            btn.layer.borderWidth = 0.5
+            btn.layer.borderColor = UIColor(hexString:"#bababa").cgColor
+            
+        }
+        
         for index in advise{
           //  drawDashLine(label: index, strokeColor:UIColor(hexString: "BABABA"))
             setBottomBorder(label: index)
