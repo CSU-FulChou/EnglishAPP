@@ -14,6 +14,14 @@ class BooksChooseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "我的书架")
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*X_, width: 10, height: 20))
+        backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
+  
+
+        self.view.addSubview(bg_HeadView)
+        self.view.addSubview(backButton)
+       
 //        let chooseBooksBtn = UIButton(frame: <#T##CGRect#>)
         chooseBooksBtn.backgroundColor = UIColor(hexString: "#EFEFEF")
         chooseBooksBtn.layer.masksToBounds = true

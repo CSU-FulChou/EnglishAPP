@@ -14,9 +14,9 @@ class RecommendationController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 80*Y_), withTitle: "更多软件推荐")
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "更多软件推荐")
         
-        let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
         backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
         

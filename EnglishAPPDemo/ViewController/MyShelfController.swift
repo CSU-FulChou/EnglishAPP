@@ -14,36 +14,29 @@ class MyShelfController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(hexString: "fafafa")
-        let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: 375, height: 75)
-        bg_HeadView.image = UIImage(named: "background_head")
-        //头部标签。
-        let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
-        // 应该在这里写一个函数，动态的修改这个 text 的显示的value
-        head.text = "我的书架"
-        head.textColor = UIColor.white
-        head.font = UIFont(name: "Helvetica Neue", size: 17)
-        head.textAlignment = NSTextAlignment.center
-        bg_HeadView.addSubview(head)
         
-        let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
+        
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "我的书架")
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*X_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
-        bg_HeadView.addSubview(backButton)
-        
-        let editBtn = UIButton(frame: CGRect(x: 330, y: 44.5, width: 40, height: 21))
-        
+        let editBtn = UIButton(frame: CGRect(x: 370*X_, y: 29.5*Y_, width: 40, height: 40))
         editBtn.isEnabled = true;
         editBtn.setTitle("取消", for: UIControl.State.normal)
         editBtn.setTitle("取消", for: UIControl.State.selected)
-        editBtn.addTarget(self, action: #selector(clicked), for: UIControl.Event.touchUpInside)
-        
+        editBtn.addTarget(self, action: #selector(clicked(_:)), for: UIControl.Event.touchUpInside)
         editBtn.titleLabel?.textColor = UIColor.white
-      
         
+//        let settingButton = UIButton(frame: CGRect(x: 370*X_, y: 29.5*Y_, width: 20, height: 20))
+//        settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
+
         self.view.addSubview(bg_HeadView)
+        self.view.addSubview(backButton)
+        
+
+
         self.view.addSubview(editBtn)
         
-        
+
         let firstBook = BookInShelf(frame: CGRect(x: 20, y: 100, width: 150, height: 250))
         firstBook.bookCover.image = UIImage(named: "bg_books")
         firstBook.title.text = " hhhhh"
@@ -96,25 +89,23 @@ class MyShelfController: UIViewController {
         self.view.addSubview(addbookview)
         cancelBtn.isHidden = true;
         
-        // Do any additional setup after loading the view.
-        
-        let testView = Bundle.main.loadNibNamed("RechargeHintView", owner: nil, options:nil)?.first as? RechargeHintView
-        testView?.frame.origin = CGPoint(x:108*X_, y: 306.5*Y_)
-        if testView != nil {
-            let bgView = UIView()
-            bgView.frame = self.view.bounds
-            bgView.backgroundColor =
-                UIColor(white: 0.1, alpha: 0.5)
-            
-                //UIColor(red: 126, green: 126, blue: 126, alpha: 0.2)
-            self.view.addSubview(bgView)
-            testView?.backgroundColor =
-                UIColor(white: 0.1, alpha: 0)
-         //   testView?.cancelBtn.addTarget(self, action: #selector(cancelHint), for: UIControl.Event.touchUpInside)
-            
-
-            bgView.addSubview(testView!)
-        }
+//        let testView = Bundle.main.loadNibNamed("RechargeHintView", owner: nil, options:nil)?.first as? RechargeHintView
+//        testView?.frame.origin = CGPoint(x:108*X_, y: 306.5*Y_)
+//        if testView != nil {
+//            let bgView = UIView()
+//            bgView.frame = self.view.bounds
+//            bgView.backgroundColor =
+//                UIColor(white: 0.1, alpha: 0.5)
+//
+//                //UIColor(red: 126, green: 126, blue: 126, alpha: 0.2)
+//            self.view.addSubview(bgView)
+//            testView?.backgroundColor =
+//                UIColor(white: 0.1, alpha: 0)
+//         //   testView?.cancelBtn.addTarget(self, action: #selector(cancelHint), for: UIControl.Event.touchUpInside)
+//
+//
+//            bgView.addSubview(testView!)
+//        }
         
     }
     

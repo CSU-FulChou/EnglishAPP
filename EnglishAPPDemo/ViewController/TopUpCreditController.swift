@@ -20,27 +20,14 @@ class TopUpCreditController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         
-        
-        let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width:SCREEN_WIDTH, height: 75*Y_)
-        bg_HeadView.image = UIImage(named: "background_head")
-        //头部标签。
-        let head = UILabel(frame: CGRect(x: 47.5,y: 40, width: 280, height: 30))
-        // 应该在这里写一个函数，动态的修改这个 text 的显示的value
-        head.text = "学分充值"
-        head.textColor = UIColor.white
-        head.font = UIFont(name: "Helvetica Neue", size: 17)
-        head.textAlignment = NSTextAlignment.center
-        bg_HeadView.addSubview(head)
-        
-        
-        let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "学分充值")
+
+        self.view.addSubview(bg_HeadView)
+
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
         backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
-
-        
-        let editBtn = UIButton(frame: CGRect(x: 330, y: 44.5, width: 40, height: 21))
-        
+        let editBtn = UIButton(frame: CGRect(x: 354*X_, y: 29.5*Y_, width: 40, height: 21))
         editBtn.isEnabled = true;
         editBtn.setTitle("帮助", for: UIControl.State.normal)
         editBtn.titleLabel?.textColor = UIColor.white
@@ -49,8 +36,10 @@ class TopUpCreditController: UIViewController {
         self.view.addSubview(backButton)
         self.view.addSubview(editBtn)
         
+        
+        
         // 画虚线：
-        UIGraphicsBeginImageContext(lineImageViewLeft.frame.size) // 位图上下文绘制区域
+    UIGraphicsBeginImageContext(lineImageViewLeft.frame.size) // 位图上下文绘制区域
         lineImageViewLeft.image?.draw(in: lineImageViewLeft.bounds)
         let context:CGContext = UIGraphicsGetCurrentContext()!
         context.setLineCap(CGLineCap.square)

@@ -12,6 +12,7 @@ let SCREEN_WIDTH = UIScreen.main.bounds.width
 let X_ = UIScreen.main.bounds.width/414
 let Y_ = UIScreen.main.bounds.height/736
 
+
 //var CENTER_X : CGFloat{
 //    get{
 //

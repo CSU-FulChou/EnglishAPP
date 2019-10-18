@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A17FAE916F70BFB1C2E83E72 /* libPods-EnglishAPPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */; };
+		BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14076723572AD800D1B2B8 /* noNetworkController.swift */; };
 		BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */; };
 		BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */; };
 		BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		7564D5E222C353C0A5F46886 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.debug.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B431AB5E69C77909FDDBBB /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.release.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF14076723572AD800D1B2B8 /* noNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noNetworkController.swift; sourceTree = "<group>"; };
 		BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellView.swift; sourceTree = "<group>"; };
 		BF156FE6233CE54400FDD8BB /* ListeningCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListeningCellView.xib; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */,
 				BF22BABC23486614002DE170 /* OwnerCenterControllerController.swift */,
 				BF22BAC2234881ED002DE170 /* HomePageController.swift */,
+				BF14076723572AD800D1B2B8 /* noNetworkController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */,
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
 				BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */,
+				BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */,
 				BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */,
 				BF22BABD23486614002DE170 /* OwnerCenterControllerController.swift in Sources */,
 				BF5788022334DB180088EC33 /* BookCell.swift in Sources */,

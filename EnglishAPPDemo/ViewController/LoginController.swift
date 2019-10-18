@@ -15,21 +15,20 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: 375, height: 70), withTitle: "账户登入")
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "账户登入")
 
-        let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
         backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
 
-        
-        
-        let loginBtn = UILabel(frame: CGRect(x: 330, y: 44.5, width: 40, height: 21))
-        loginBtn.text = "注册"
-        loginBtn.textColor = UIColor.white
-        bg_HeadView.addSubview(loginBtn)
+        let registerBtn = UIButton(frame: CGRect(x: 355*X_, y: 29.5*Y_, width: 40, height: 21))
+        registerBtn.setTitle("注册", for: .normal)
+        registerBtn.setTitleColor(UIColor.white, for: .normal)
+        registerBtn.addTarget(self, action: #selector(register), for: .touchUpInside)
         
         self.view.addSubview(bg_HeadView)
         self.view.addSubview(backButton)
+        self.view.addSubview(registerBtn)
         
         setBottomBorder(textField: phoneNumber)
         setBottomBorder(textField: certificationCode)
@@ -59,14 +58,9 @@ class LoginController: UIViewController {
            self.navigationController?.popViewController(animated: true)
        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func register(){
+        let registerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterController")
+        self.navigationController!.pushViewController(registerVC, animated: true)
     }
-    */
-
+    
 }
