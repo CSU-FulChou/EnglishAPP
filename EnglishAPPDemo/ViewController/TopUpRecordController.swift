@@ -21,6 +21,7 @@ class TopUpRecordController: UIViewController{
         let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "充值记录")
             
         let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
+            
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
             backButton.addTarget(self, action: #selector(popBack(_:)), for:.touchUpInside)
             

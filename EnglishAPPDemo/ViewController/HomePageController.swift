@@ -9,11 +9,18 @@
 import UIKit
 
 class HomePageController: UIViewController {
+    
+    @IBOutlet weak var ownerCenterBtn: UIButton!
     var menuViewController:OwnerCenterControllerController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
       
         // Do any additional setup after loading the view.
+    }
+    func setupView(){
+        ownerCenterBtn.frame = CGRect(x: 374*X_, y: 39.833*Y_, width: 20, height: 20)
     }
     
     @IBAction func clickSynExercise(_ sender: Any) {
@@ -24,8 +31,8 @@ class HomePageController: UIViewController {
     }
     
     @IBAction func clickBeginStudy(_ sender: Any) {
-        let unitChooseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UnitChooseView")
-        self.navigationController?.pushViewController(unitChooseVC, animated: true)
+        let bookUnitChooseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BookUnitChooseView")
+        self.navigationController?.pushViewController(bookUnitChooseVC, animated: true)
     }
     
     @IBAction func showOwnerCenter(_ sender: Any) {

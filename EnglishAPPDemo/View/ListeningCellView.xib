@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,8 +73,12 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="beginAndPauseBtn" destination="ndK-nA-hqr" id="JuB-wa-cnZ"/>
                 <outlet property="enContent" destination="dCQ-x5-HnU" id="dzi-Y6-gqU"/>
+                <outlet property="followReadBtn" destination="u0q-eN-ymf" id="0v2-rU-h5c"/>
                 <outlet property="starView" destination="1YE-UX-ivX" id="t3T-Bo-0OZ"/>
+                <outlet property="tryListeningBtn" destination="8jf-hi-xW0" id="Nhi-Mg-fpp"/>
+                <outlet property="znContentLabel" destination="QX1-iQ-Xg1" id="Ifq-0a-33y"/>
             </connections>
             <point key="canvasLocation" x="-113.04347826086958" y="-496.875"/>
         </view>

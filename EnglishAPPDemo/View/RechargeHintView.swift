@@ -11,17 +11,18 @@ import UIKit
 class RechargeHintView: UIView {
 
     @IBOutlet weak var headView: UIView!
-    @IBOutlet weak var cancelBtn: UIButton!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+     @IBOutlet weak var titile: UILabel!
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        backBtn.addTarget(self, action: #selector(popBack), for: .touchUpInside)
         
+    }
+    
+    
+ @objc  func popBack(){
+        self.removeFromSuperview()
     }
 
 

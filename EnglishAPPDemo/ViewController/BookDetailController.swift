@@ -24,65 +24,45 @@ class BookDetailController: UIViewController {
         self.view.addGestureRecognizer(viewGestureRecongnizer)
         //
         self.view.backgroundColor = UIColor(hexString: "fafafa")
-        let headView = UIView()
-           headView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 70*Y_)
         
-        let bg_HeadView = UIImageView()
-        bg_HeadView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 70*Y_)
-        bg_HeadView.image = UIImage(named: "background_head")
-        
+         let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "人教版PEP 三年级上册")
 
-        
-        //
-        headView.addSubview(bg_HeadView)
-        //头部标签。
-        let head = UILabel(frame: CGRect(x: 70*X_,y: 40, width: 280, height: 30))
-        // 应该在这里写一个函数，动态的修改这个 text 的显示的value
-        head.text = "人教版PEP 三年级上册"
-        head.textColor = UIColor.white
-        head.font = UIFont(name: "Helvetica Neue", size: 17)
-        head.textAlignment = NSTextAlignment.center
-        headView.addSubview(head)
-        
-        let backButton = UIButton(frame: CGRect(x: 22.5, y: 45, width: 10, height: 20))
+        let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
         backButton.addTarget(self, action: #selector(popBack), for: .touchUpInside)
 
-        let settingButton = UIButton(frame: CGRect(x: 380.5*X_, y: 44.5, width: 20, height: 21))
+        let settingButton = UIButton(frame:CGRect(x: 370*X_, y: 29.5*Y_, width: 20, height: 20))
         settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
         
         settingButton.addTarget(self, action: #selector(clickSettingBtn), for: UIControl.Event.touchUpInside)
       //  let tap = UITapGestureRecognizer(target: self, action: #selector(clickSettingBtn))
 
         
-        self.view.addSubview(headView)
+        self.view.addSubview(bg_HeadView)
         self.view.addSubview(backButton)
         self.view.addSubview(settingButton)
-       
-        
-        //--------------------------------------------
+
         chooseUnitBtn.layer.borderColor = UIColor(hexString: "#FF6C69").cgColor
         chooseUnitBtn.layer.borderWidth = 0.5
         chooseUnitBtn.layer.masksToBounds = true
         chooseUnitBtn.layer.cornerRadius = 13*Y_;
         
         chooseUnitBtn.addTarget(self, action: #selector(chooseLession), for: .touchUpInside)
-        
-        
-        
-        for index in 0...2{
-            let test = Bundle.main.loadNibNamed("ListeningCellView", owner: nil, options: nil)?.first as? ListeningCellView
-            test?.enContent.text = "try say hello"
-            test?.frame = CGRect(x: 40*X_, y: 180*Y_+CGFloat(index)*150, width: 300*X_, height: 130*Y_)
-            if test != nil {
-                contentsView.addSubview(test!)
-            }
-        }
-        
+
         let headListeningView = Bundle.main.loadNibNamed("ListeningCellHeadView", owner: nil, options: nil)?.first as? ListeningCellHeadView
             headListeningView?.frame = CGRect(x: 90*X_, y: 15*Y_, width: 240*X_, height: 160*Y_)
         if headListeningView != nil{
             contentsView.addSubview(headListeningView!)
+        }
+        
+        for index in 0...1{
+            let test = Bundle.main.loadNibNamed("ListeningCellView", owner: nil, options: nil)?.first as? ListeningCellView
+            test?.enContent.text = "try say hello"
+            test?.znContentLabel.text = "试着说中文"
+            test?.frame = CGRect(x: 40*X_, y: 180*Y_+CGFloat(index)*150, width: 300*X_, height: 130*Y_)
+            if test != nil {
+                contentsView.addSubview(test!)
+            }
         }
         
         
@@ -101,8 +81,19 @@ class BookDetailController: UIViewController {
         
     }
     
-    @objc func noChoose(sender:UITapGestureRecognizer){
+    @IBAction func noEoughCredit(_ sender: Any) {
         
+       let hintView = Bundle.main.loadNibNamed("RechargeHintView", owner: nil, options: nil)?.first as? RechargeHintView
+        hintView?.frame.origin = CGPoint(x: 105.5*X_, y: 200*Y_)
+        hintView?.tag = 100
+        if hintView != nil{
+            self.view.addSubview(hintView!)
+        }
+        
+        
+    }
+    
+    @objc func noChoose(sender:UITapGestureRecognizer){
         
       if  let viewWithtag = self.view.viewWithTag(100){
         viewWithtag.removeFromSuperview()

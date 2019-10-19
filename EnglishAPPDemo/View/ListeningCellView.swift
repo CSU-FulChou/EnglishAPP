@@ -12,6 +12,12 @@ class ListeningCellView: UIView {
     
     @IBOutlet weak var enContent: UILabel!
     @IBOutlet weak var starView: StarView!
+    @IBOutlet weak var znContentLabel: UILabel!
+    @IBOutlet weak var tryListeningBtn: UIButton!
+    @IBOutlet weak var followReadBtn: UIButton!
+    @IBOutlet weak var beginAndPauseBtn: UIButton!
+    
+    
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
     }

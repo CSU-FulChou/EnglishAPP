@@ -67,3 +67,10 @@ extension UIColor {
         }
     }
 }
+extension UIButton{
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+           let margin: CGFloat = 5
+           let area = self.bounds.insetBy(dx: -margin, dy: -margin) //负值是方法响应范围
+           return area.contains(point)
+       }
+}
