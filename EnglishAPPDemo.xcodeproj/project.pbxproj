@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A17FAE916F70BFB1C2E83E72 /* libPods-EnglishAPPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */; };
+		BF0C7825235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C7824235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift */; };
 		BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14076723572AD800D1B2B8 /* noNetworkController.swift */; };
 		BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */; };
 		BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */; };
@@ -60,6 +61,7 @@
 		BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */; };
 		BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */; };
 		BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91D1DC233A747000132BAE /* RecommandationCellView.xib */; };
+		BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */; };
 		BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD72976232F6025002D79AD /* ZFCircleProgress.m */; };
 		BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7297C232F613E002D79AD /* ZFCountingLabel.m */; };
 		BFEFE694235B2C5900E8A25B /* BaseUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFE693235B2C5900E8A25B /* BaseUINavigationViewController.swift */; };
@@ -68,6 +70,7 @@
 /* Begin PBXFileReference section */
 		7564D5E222C353C0A5F46886 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.debug.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B431AB5E69C77909FDDBBB /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.release.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF0C7824235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityTapGestureRecongnizer.swift; sourceTree = "<group>"; };
 		BF14076723572AD800D1B2B8 /* noNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noNetworkController.swift; sourceTree = "<group>"; };
 		BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		BF156FE4233CE4AD00FDD8BB /* ListeningCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningCellView.swift; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		BF919B7F231CA45800792E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandationCellView.swift; sourceTree = "<group>"; };
 		BF91D1DC233A747000132BAE /* RecommandationCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandationCellView.xib; sourceTree = "<group>"; };
+		BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordUnitChooseController.swift; sourceTree = "<group>"; };
 		BFD72974232F6024002D79AD /* EnglishAPPDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnglishAPPDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFD72975232F6025002D79AD /* ZFCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCircleProgress.h; sourceTree = "<group>"; };
 		BFD72976232F6025002D79AD /* ZFCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCircleProgress.m; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 				BF22BAC2234881ED002DE170 /* HomePageController.swift */,
 				BF14076723572AD800D1B2B8 /* noNetworkController.swift */,
 				BFEFE693235B2C5900E8A25B /* BaseUINavigationViewController.swift */,
+				BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				BF919B7F231CA45800792E80 /* Info.plist */,
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
 				BF1A6A302338A94F00C3A908 /* Define.swift */,
+				BF0C7824235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift */,
 			);
 			path = EnglishAPPDemo;
 			sourceTree = "<group>";
@@ -410,6 +416,8 @@
 				BF66091223399EF000915F16 /* Inch.swift in Sources */,
 				BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */,
 				BFEFE694235B2C5900E8A25B /* BaseUINavigationViewController.swift in Sources */,
+				BF0C7825235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift in Sources */,
+				BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */,
 				BF5787EC2334890C0088EC33 /* NewItemViewController.swift in Sources */,
 				BF578804233504E00088EC33 /* MyShelfController.swift in Sources */,
 				BF5787F22334890C0088EC33 /* SentenceListeningDetailsView.swift in Sources */,

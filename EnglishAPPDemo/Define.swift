@@ -30,6 +30,7 @@ func CENTER_Y(object:UIView) -> CGFloat{
     return object.frame.origin.y+object.frame.height/2
 }
 
+
 //func Bottom(object:UIView) -> CGFloat{
 //    return object.frame.origin.y +
 //        object.frame.height
