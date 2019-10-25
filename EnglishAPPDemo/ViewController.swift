@@ -59,38 +59,38 @@ class ViewController: UIViewController {
     //拖动手势响应
     @objc func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
         
-        switch(recognizer.state) {
-        // 刚刚开始滑动
-        case .began:
-            // 判断拖动方向
-            let dragFromLeftToRight = (recognizer.velocity(in: view).x < 0)
-            // 如果刚刚开始滑动的时候还处于主页面，从左向右滑动加入侧面菜单
-            if (currentState == .Collapsed && dragFromLeftToRight) {
-                currentState = .Expanding
-                addMenuViewController()
-            }
-            
-        // 如果是正在滑动，则偏移主视图的坐标实现跟随手指位置移动
-        case .changed:
-
-            let positionX = recognizer.view!.frame.origin.x +
-                recognizer.translation(in: view).x
-            //页面滑到最左侧的话就,不许继续往左移动
-            recognizer.view!.frame.origin.x = positionX > 0 ? 0: positionX
-           // self.menuViewController?.view.frame.origin.x +=  recognizer.view!.frame.origin.x
-            
-           // print(self.menuViewController?.view.frame.origin.x)
-            recognizer.setTranslation(.zero, in: view)
-            
-        // 如果滑动结束
-        case .ended:
-            //根据页面滑动是否过半，判断后面是自动展开还是收缩
-            let hasMovedhanHalfway = recognizer.view!.frame.origin.x < -view.bounds.size.width/3
-            
-            animateMainView(shouldExpand: hasMovedhanHalfway)
-        default:
-            break
-        }
+//        switch(recognizer.state) {
+//        // 刚刚开始滑动
+//        case .began:
+//            // 判断拖动方向
+//            let dragFromLeftToRight = (recognizer.velocity(in: view).x < 0)
+//            // 如果刚刚开始滑动的时候还处于主页面，从左向右滑动加入侧面菜单
+//            if (currentState == .Collapsed && dragFromLeftToRight) {
+//                currentState = .Expanding
+//                addMenuViewController()
+//            }
+//
+//        // 如果是正在滑动，则偏移主视图的坐标实现跟随手指位置移动
+//        case .changed:
+//
+//            let positionX = recognizer.view!.frame.origin.x +
+//                recognizer.translation(in: view).x
+//            //页面滑到最左侧的话就,不许继续往左移动
+//            recognizer.view!.frame.origin.x = positionX > 0 ? 0: positionX
+//           // self.menuViewController?.view.frame.origin.x +=  recognizer.view!.frame.origin.x
+//
+//           // print(self.menuViewController?.view.frame.origin.x)
+//            recognizer.setTranslation(.zero, in: view)
+//
+//        // 如果滑动结束
+//        case .ended:
+//            //根据页面滑动是否过半，判断后面是自动展开还是收缩
+//            let hasMovedhanHalfway = recognizer.view!.frame.origin.x < -view.bounds.size.width/3
+//
+//            animateMainView(shouldExpand: hasMovedhanHalfway)
+//        default:
+//            break
+//        }
     }
     
     //单击手势响应

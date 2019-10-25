@@ -22,6 +22,7 @@ class BookDetailController: UIViewController {
         viewGestureRecongnizer.numberOfTapsRequired = 1
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(viewGestureRecongnizer)
+        
         //
         self.view.backgroundColor = UIColor(hexString: "fafafa")
         

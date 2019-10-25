@@ -70,15 +70,21 @@ extension OwnerCenterControllerController{
             let creditAboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreditAboutController")
             self.navigationController!.pushViewController(creditAboutVC, animated: true)
         case 3:
-                let creditAboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreditAboutController")
-                self.navigationController!.pushViewController(creditAboutVC, animated: true)
-            case 6:
-                    let opinionFeedbackVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OpinionFeedbackController")
-                    self.navigationController!.pushViewController(opinionFeedbackVC, animated: true)
-            case 7:
-                    let recommendationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecommendationController")
-                    self.navigationController!.pushViewController(recommendationVC, animated: true)
+            let creditAboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreditAboutController")
+            self.navigationController!.pushViewController(creditAboutVC, animated: true)
             
+            
+        case 4:
+            let aboutUsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutUsController")
+            self.navigationController!.pushViewController(aboutUsVC, animated: true)
+        case 6:
+            let opinionFeedbackVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OpinionFeedbackController")
+            self.navigationController!.pushViewController(opinionFeedbackVC, animated: true)
+        case 7:
+            let recommendationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecommendationController")
+            self.navigationController!.pushViewController(recommendationVC, animated: true)
+        case 8:
+            self.navigationController?.popViewController(animated: true)
             
         default:
             break

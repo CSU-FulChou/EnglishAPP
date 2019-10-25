@@ -36,52 +36,8 @@ class HomePageController: UIViewController {
     }
     
     @IBAction func showOwnerCenter(_ sender: Any) {
-        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginController")
-        self.navigationController!.pushViewController(loginVC, animated: true)
-//
-////        addMenuViewController()
-////         animateMainView(shouldExpand: hasMovedhanHalfway)
-//       if (menuViewController == nil) {
-//                  menuViewController = UIStoryboard(name: "Main", bundle: nil)
-//                      .instantiateViewController(withIdentifier: "OwnerCenterView")
-//                      as? OwnerCenterControllerController
-//
-//                  // 插入当前视图并置顶
-//                  view.insertSubview(menuViewController!.view, at: 0)
-//
-//                  // 建立父子关系
-//                  addChild(menuViewController!)
-//                  menuViewController!.didMove(toParent: self)
-//              }
-//
-//        // 如果是用来展开
-//          if (true) {
-//
-//              animateMainViewXPosition(targetPosition:70-self.view.frame.width)
-//          }
-//              // 如果是用于隐藏
-////          else {
-////              // 动画
-////              animateMainViewXPosition(targetPosition: 0) { finished in
-////                  // 动画结束之后s更新状态
-////                  self.currentState = .Collapsed
-////                  // 移除左侧视图
-////                  self.menuViewController?.view.removeFromSuperview()
-////                  // 释放内存
-////                  self.menuViewController = nil;
-////              }
-////          }
-//
-//    }
-//    //主页移动动画（在x轴移动）
-//    func animateMainViewXPosition(targetPosition: CGFloat,
-//                                  completion: ((Bool) -> Void)! = nil) {
-//        //usingSpringWithDamping：1.0表示没有弹簧震动动画
-//        UIView.animate(withDuration: 0.05, delay: 0, usingSpringWithDamping: 1.0,
-//                       initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-//                        self.view.frame.origin.x = targetPosition
-//        }, completion: completion)
-//
+        let ownerCenterVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OwnerCenterView")
+        self.navigationController!.pushViewController(ownerCenterVC, animated: true)
 
     }
     
@@ -89,14 +45,5 @@ class HomePageController: UIViewController {
     
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -14,7 +14,7 @@ class AboutUsController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(hexString: "fafafa")
          
-        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "学分使用说明")
+        let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: "软件版本")
         
 
         let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*Y_, width: 10, height: 20))
@@ -25,7 +25,7 @@ class AboutUsController: UIViewController {
         self.view.addSubview(backButton)
         textView.font = UIFont(name:textView.font!.fontName, size:15)
         textView.textColor = UIColor(hexString: "#343434")
-        textView.text = " “学伴”系列软件是针对课本同步学习的强大助手，能帮助同学快速掌握课程要点、巩固学习成果、强化知识记忆、提升考试成绩 "
+        textView.text = " “学伴”系列软件是针对课本同步学习的强大助手，能帮助同学快速掌握课程要点、巩固学习成果、强化知识记忆、提升考试成绩 \n 这是软件的内测版1    .0.0"
     }
     @objc func popBack(_ sender: Any) {
            self.navigationController?.popViewController(animated: true)
