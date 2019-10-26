@@ -10,23 +10,39 @@ import UIKit
 
 class testViewController: UIViewController,UIScrollViewDelegate{
 
+    @IBOutlet var scrollView: UIScrollView!{
+        didSet{
+            scrollView.addSubview(imageView)
+            scrollView.backgroundColor = UIColor.white
+        }
+    }
+    
+    var imageView = UIImageView()
+    var testLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = UIImage(named: "Icon_recommendation")
+        imageView.frame = CGRect(x: 0, y: 50, width: SCREEN_WIDTH, height: 1600)
+        scrollView.contentSize = imageView.frame.size
+      
+
+    
         
-        let testScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: SCREEN_WIDTH, height: 500))
-        // 设置背景颜色
-        testScrollView.backgroundColor = UIColor.blue
-        //scrollView.contentSize
-        // 设置代理
-        testScrollView.delegate = self
-        
-        self.view.addSubview(testScrollView)
+//        let testScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: SCREEN_WIDTH, height: 500))
+//        // 设置背景颜色
+//        testScrollView.backgroundColor = UIColor.white
+//        //scrollView.contentSize
+//        // 设置代理
+//        testScrollView.delegate = self
+//
+//        self.view.addSubview(testScrollView)
 
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("x:\(scrollView.contentOffset.x) y:\(scrollView.contentOffset.y)")
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print("x:\(scrollView.contentOffset.x) y:\(scrollView.contentOffset.y)")
+//    }
     
 
     /*

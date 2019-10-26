@@ -25,6 +25,20 @@ class HeadBgView: UIImageView {
         
     }
     
+    init(frame:CGRect,headLableFrame frame1:CGRect, withTitle title:String) {
+
+        //头部标签。
+        headLable = UILabel(frame: frame1)
+        headLable.text = title
+        headLable.textColor = UIColor.white
+        headLable.font = UIFont(name: "Helvetica Neue", size: 18)
+        headLable.textAlignment = NSTextAlignment.center
+        super.init(frame: frame)
+        self.image = UIImage(named: "background_head")
+        self.addSubview(headLable)
+        
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

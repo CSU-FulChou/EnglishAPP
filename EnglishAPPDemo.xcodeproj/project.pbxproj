@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A17FAE916F70BFB1C2E83E72 /* libPods-EnglishAPPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */; };
+		BF0373702363FBE700D09393 /* SynExerciseBigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03736F2363FBE700D09393 /* SynExerciseBigView.swift */; };
+		BF0373742363FD0A00D09393 /* SynExerciseBigView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0373732363FD0A00D09393 /* SynExerciseBigView.xib */; };
+		BF03737823640D4100D09393 /* SynExerciseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03737723640D4100D09393 /* SynExerciseImageView.swift */; };
 		BF0C7825235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C7824235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift */; };
 		BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14076723572AD800D1B2B8 /* noNetworkController.swift */; };
 		BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */; };
@@ -67,6 +70,9 @@
 /* Begin PBXFileReference section */
 		7564D5E222C353C0A5F46886 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.debug.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B431AB5E69C77909FDDBBB /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishAPPDemo.release.xcconfig"; path = "Target Support Files/Pods-EnglishAPPDemo/Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF03736F2363FBE700D09393 /* SynExerciseBigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynExerciseBigView.swift; sourceTree = "<group>"; };
+		BF0373732363FD0A00D09393 /* SynExerciseBigView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SynExerciseBigView.xib; sourceTree = "<group>"; };
+		BF03737723640D4100D09393 /* SynExerciseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynExerciseImageView.swift; sourceTree = "<group>"; };
 		BF0C7824235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityTapGestureRecongnizer.swift; sourceTree = "<group>"; };
 		BF14076723572AD800D1B2B8 /* noNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noNetworkController.swift; sourceTree = "<group>"; };
 		BF156FE2233CDE2A00FDD8BB /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
@@ -159,6 +165,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF3E93632363E8A400422B8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF919B73231CA45600792E80 /* AppDelegate.swift */,
+				BF919B7A231CA45800792E80 /* Assets.xcassets */,
+				BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BF5787D82333AE5E0088EC33 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +196,9 @@
 				BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */,
 				BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */,
 				BF86BB902352AFA600A23C2F /* HeadBgView.swift */,
+				BF03736F2363FBE700D09393 /* SynExerciseBigView.swift */,
+				BF0373732363FD0A00D09393 /* SynExerciseBigView.xib */,
+				BF03737723640D4100D09393 /* SynExerciseImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,11 +261,9 @@
 				BF5787DC233487C30088EC33 /* ViewController */,
 				BF5787D82333AE5E0088EC33 /* View */,
 				BFD72973232F5FBA002D79AD /* ZFCircleProgress */,
-				BF919B73231CA45600792E80 /* AppDelegate.swift */,
+				BF3E93632363E8A400422B8B /* Supporting Files */,
 				BF919B75231CA45600792E80 /* ViewController.swift */,
 				BF919B77231CA45600792E80 /* Main.storyboard */,
-				BF919B7A231CA45800792E80 /* Assets.xcassets */,
-				BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */,
 				BF919B7F231CA45800792E80 /* Info.plist */,
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
 				BF1A6A302338A94F00C3A908 /* Define.swift */,
@@ -332,6 +349,7 @@
 				BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */,
 				BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */,
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
+				BF0373742363FD0A00D09393 /* SynExerciseBigView.xib in Resources */,
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
 				BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */,
 				BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */,
@@ -391,6 +409,7 @@
 			files = (
 				BF156FF3233E603200FDD8BB /* RechargeHintView.swift in Sources */,
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
+				BF0373702363FBE700D09393 /* SynExerciseBigView.swift in Sources */,
 				BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */,
 				BF3E93612363159600422B8B /* testViewController.swift in Sources */,
 				BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */,
@@ -428,6 +447,7 @@
 				BF22BACD234982D7002DE170 /* ChooseLessionsView.swift in Sources */,
 				BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */,
 				BF5787FA2334CB1A0088EC33 /* RecommendationController.swift in Sources */,
+				BF03737823640D4100D09393 /* SynExerciseImageView.swift in Sources */,
 				BF5787F62334AA2F0088EC33 /* LoginController.swift in Sources */,
 				BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,
