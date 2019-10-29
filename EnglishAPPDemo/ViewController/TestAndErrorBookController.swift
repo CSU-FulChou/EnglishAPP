@@ -24,10 +24,10 @@ class TestAndErrorBookController: UIViewController {
         let bg_HeadView = HeadBgView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64*Y_), withTitle: headTitle)
         let backButton = UIButton(frame: CGRect(x: 22.5*X_, y: 30*X_, width: 10, height: 20))
         backButton.setBackgroundImage(UIImage(named: "bt_back"), for: UIControl.State.normal)
+        backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
         let settingButton = UIButton(frame: CGRect(x: 370*X_, y: 29.5*Y_, width: 20, height: 20))
         settingButton.setBackgroundImage(UIImage(named: "bt_setting"), for: UIControl.State.normal)
-        backButton.addTarget(self, action: #selector(popBack), for:.touchUpInside)
-
+       
         self.view.addSubview(bg_HeadView)
         self.view.addSubview(backButton)
         self.view.addSubview(settingButton)

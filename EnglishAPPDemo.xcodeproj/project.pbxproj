@@ -29,6 +29,7 @@
 		BF22BACD234982D7002DE170 /* ChooseLessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */; };
 		BF22BACF234982EC002DE170 /* ChooseLessionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */; };
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
+		BF341954236706C400AFDC0C /* LearnChooseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF341953236706C400AFDC0C /* LearnChooseListController.swift */; };
 		BF3E935F2362E76500422B8B /* TestAndErrorBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E935E2362E76500422B8B /* TestAndErrorBookController.swift */; };
 		BF3E93612363159600422B8B /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E93602363159600422B8B /* testViewController.swift */; };
 		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
@@ -91,6 +92,7 @@
 		BF22BACC234982D7002DE170 /* ChooseLessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLessionsView.swift; sourceTree = "<group>"; };
 		BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLessionsView.xib; sourceTree = "<group>"; };
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
+		BF341953236706C400AFDC0C /* LearnChooseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnChooseListController.swift; sourceTree = "<group>"; };
 		BF3E935E2362E76500422B8B /* TestAndErrorBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndErrorBookController.swift; sourceTree = "<group>"; };
 		BF3E93602363159600422B8B /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */,
 				BF3E935E2362E76500422B8B /* TestAndErrorBookController.swift */,
 				BF3E93602363159600422B8B /* testViewController.swift */,
+				BF341953236706C400AFDC0C /* LearnChooseListController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				BF22BABF23486F22002DE170 /* OwnerMenuTableViewCell.swift in Sources */,
 				BF66091323399EF000915F16 /* Auto.swift in Sources */,
 				BF919B76231CA45600792E80 /* ViewController.swift in Sources */,
+				BF341954236706C400AFDC0C /* LearnChooseListController.swift in Sources */,
 				BF3E935F2362E76500422B8B /* TestAndErrorBookController.swift in Sources */,
 				BF6FD50223365253004021D1 /* CreditAboutController.swift in Sources */,
 				BF5787F42334890C0088EC33 /* BookUnitChooseView.swift in Sources */,

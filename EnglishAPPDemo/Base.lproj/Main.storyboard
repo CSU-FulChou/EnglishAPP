@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Onr-EM-8Q4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SdS-DY-rE6">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -81,7 +81,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="我的书架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-mE-54L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的书架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-mE-54L">
                                 <rect key="frame" x="14" y="532" width="74" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -127,7 +127,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9K-my-hTd" userLabel="book1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9K-my-hTd" userLabel="book1">
                                 <rect key="frame" x="166" y="595" width="85" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="ItL-JF-BVc"/>
@@ -147,7 +147,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="人教版PEP 三年级上册 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRy-MM-ar3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人教版PEP 三年级上册 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRy-MM-ar3">
                                 <rect key="frame" x="159" y="714" width="96" height="11"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <nil key="textColor"/>
@@ -206,7 +206,7 @@
                                 <rect key="frame" x="158" y="233.66666666666666" width="101" height="49.333333333333343"/>
                                 <state key="normal" backgroundImage="bt_learningReport"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="人教版PEP 三年级上册 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6K-pq-GBh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人教版PEP 三年级上册 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6K-pq-GBh">
                                 <rect key="frame" x="34" y="713" width="97" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="fbr-mi-tnT"/>
@@ -215,7 +215,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqH-Tp-Zm7" userLabel="book3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqH-Tp-Zm7" userLabel="book3">
                                 <rect key="frame" x="35" y="594" width="88" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="TlU-IT-3zv"/>
@@ -335,7 +335,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_head" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2j-qV-gx2">
-                                <rect key="frame" x="0.0" y="-149" width="414" height="142"/>
+                                <rect key="frame" x="0.0" y="-78" width="414" height="71"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-tQ-z4D">
                                 <rect key="frame" x="176" y="45" width="62" height="30"/>
@@ -1467,7 +1467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Lq-6y-gRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134.7826086956522" y="-556.79347826086962"/>
+            <point key="canvasLocation" x="-138" y="-1083"/>
         </scene>
         <!--Syn Exercise-->
         <scene sceneID="UMy-6e-pGr">
@@ -1521,6 +1521,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-ra-tU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2593" y="-558"/>
+        </scene>
+        <!--Learn Choose List Controller-->
+        <scene sceneID="eot-9l-9Wo">
+            <objects>
+                <viewController id="SdS-DY-rE6" customClass="LearnChooseListController" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cg3-0H-1eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GIZ-83-0py">
+                                <rect key="frame" x="0.0" y="71" width="414" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GIZ-83-0py" firstAttribute="top" secondItem="Cg3-0H-1eZ" secondAttribute="top" constant="71" id="61g-Jv-LOV"/>
+                            <constraint firstItem="GIZ-83-0py" firstAttribute="bottom" secondItem="gIP-gJ-iOU" secondAttribute="bottom" id="MEB-Uh-nWa"/>
+                            <constraint firstItem="GIZ-83-0py" firstAttribute="trailing" secondItem="gIP-gJ-iOU" secondAttribute="trailing" id="Mhi-bL-5GW"/>
+                            <constraint firstItem="GIZ-83-0py" firstAttribute="leading" secondItem="gIP-gJ-iOU" secondAttribute="leading" id="cgf-u2-t3t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gIP-gJ-iOU"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuTableView" destination="GIZ-83-0py" id="FqN-xf-C3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idT-MY-Rex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311.594202898551" y="-558.42391304347825"/>
         </scene>
         <!--WordListeningDetails-->
         <scene sceneID="otR-nk-Owh">
@@ -1652,7 +1682,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5W-Me-Jdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3526" y="-1201"/>
+            <point key="canvasLocation" x="4096" y="-1250"/>
         </scene>
         <!--Test And Error Book Controller-->
         <scene sceneID="CCI-aU-tEK">
@@ -1778,7 +1808,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGG-EJ-7z4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3525" y="-525"/>
+            <point key="canvasLocation" x="4096" y="-558"/>
         </scene>
         <!--BaseUI Navigation Controller-->
         <scene sceneID="viU-YJ-0EE">
