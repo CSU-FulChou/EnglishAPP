@@ -13,7 +13,6 @@ class LearnChooseListController: UIViewController {
     var isOpenedTables:[Bool] = [false,false,false]
     let headData = ["问候（20)","xixi（20)"]
     let data = ["你好","hello","well","ce shi "]
-//    let gestureTap = UIGestureRecognizer(target: self, action: #selector(clickHeadView(_:)))
     
     @IBOutlet weak var menuTableView: UITableView!
     override func viewDidLoad() {
@@ -30,9 +29,7 @@ class LearnChooseListController: UIViewController {
         menuTableView.dataSource = self
         menuTableView.separatorStyle = .none
       //  let gestureTap = UIGestureRecognizer(target: self, action: #selector(clickHeadView(_:)))
-       //
-        
-              //menuTableView.headerView(forSection: 0)?.addGestureRecognizer(gestureTap)
+     //menuTableView.headerView(forSection: 0)?.addGestureRecognizer(gestureTap)
         
     }
     
@@ -46,20 +43,30 @@ class LearnChooseListController: UIViewController {
     }
     
     @objc func clickHeadView(_ sender: UIButton!){
-        print("11111")
-       // print(tap.view!.tag)
+        if  isOpenedTables[sender.tag]{
+            isOpenedTables[sender.tag] = false
+        }else{
+            isOpenedTables[sender.tag] = true
+        }
+        print(isOpenedTables[sender.tag])
+        menuTableView.reloadData()
         
     }
-    @objc func test(){
-        print("111")
-    }
+//    @objc func test(){
+//        print("111")
+//    }
 
 }
 
 extension LearnChooseListController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        if isOpenedTables[section] {
+            return data.count
+        }else{
+            return 0;
+        }
+        
     }
     
     
@@ -73,11 +80,12 @@ extension LearnChooseListController:UITableViewDataSource,UITableViewDelegate{
         let headView = UIButton()
         headView.tag = section
         headView.isUserInteractionEnabled = true
-        
+       // let gestureTap = UITapGestureRecognizer(target: self, action: #selector(clickHeadView(_:)))
         //为什么采取 绑定手势函数的方式行不通呢？
+        //因为手势的名字你写错了，傻逼东西。一个个单词检查ok？
+        //不对，还是要放在函数里面
         //        let gestureTap = UIGestureRecognizer(target: self, action: #selector(test))
-        //        headView.addGestureRecognizer(gestureTap)
-        
+       // headView.addGestureRecognizer(gestureTap)
         headView.addTarget(self, action: #selector(clickHeadView(_:)), for: .touchUpInside)
         
         let leftImageView = UIImageView(frame: CGRect(x: 19*X_, y: 23*Y_, width: 18*X_, height: 18*Y_))

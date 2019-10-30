@@ -171,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				BF919B73231CA45600792E80 /* AppDelegate.swift */,
-				BF919B7A231CA45800792E80 /* Assets.xcassets */,
 				BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -266,6 +265,7 @@
 				BFD72973232F5FBA002D79AD /* ZFCircleProgress */,
 				BF3E93632363E8A400422B8B /* Supporting Files */,
 				BF919B75231CA45600792E80 /* ViewController.swift */,
+				BF919B7A231CA45800792E80 /* Assets.xcassets */,
 				BF919B77231CA45600792E80 /* Main.storyboard */,
 				BF919B7F231CA45800792E80 /* Info.plist */,
 				BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */,
