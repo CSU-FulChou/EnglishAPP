@@ -17,6 +17,10 @@ class SettingView: UIView {
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     
+    @IBAction func test(_ sender: Any) {
+        print("1213123")
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         for btn in cornerRadiusBtns{

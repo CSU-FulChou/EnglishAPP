@@ -30,6 +30,7 @@
 		BF22BACF234982EC002DE170 /* ChooseLessionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */; };
 		BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */; };
 		BF341954236706C400AFDC0C /* LearnChooseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF341953236706C400AFDC0C /* LearnChooseListController.swift */; };
+		BF3A41B1237036DF007BABF7 /* WriteLearnDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A41B0237036DF007BABF7 /* WriteLearnDetailController.swift */; };
 		BF3E935F2362E76500422B8B /* TestAndErrorBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E935E2362E76500422B8B /* TestAndErrorBookController.swift */; };
 		BF3E93612363159600422B8B /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E93602363159600422B8B /* testViewController.swift */; };
 		BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5787D62333AB460088EC33 /* UnitChooseCell.swift */; };
@@ -62,6 +63,7 @@
 		BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF919B7C231CA45800792E80 /* LaunchScreen.storyboard */; };
 		BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */; };
 		BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91D1DC233A747000132BAE /* RecommandationCellView.xib */; };
+		BFAAFD55237045BB008D8F0B /* ListeningLearnDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */; };
 		BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */; };
 		BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD72976232F6025002D79AD /* ZFCircleProgress.m */; };
 		BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7297C232F613E002D79AD /* ZFCountingLabel.m */; };
@@ -93,6 +95,7 @@
 		BF22BACE234982EC002DE170 /* ChooseLessionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLessionsView.xib; sourceTree = "<group>"; };
 		BF306FF423267FAD002ABD67 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 		BF341953236706C400AFDC0C /* LearnChooseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnChooseListController.swift; sourceTree = "<group>"; };
+		BF3A41B0237036DF007BABF7 /* WriteLearnDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLearnDetailController.swift; sourceTree = "<group>"; };
 		BF3E935E2362E76500422B8B /* TestAndErrorBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndErrorBookController.swift; sourceTree = "<group>"; };
 		BF3E93602363159600422B8B /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		BF5787D62333AB460088EC33 /* UnitChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitChooseCell.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		BF919B7F231CA45800792E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandationCellView.swift; sourceTree = "<group>"; };
 		BF91D1DC233A747000132BAE /* RecommandationCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandationCellView.xib; sourceTree = "<group>"; };
+		BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningLearnDetailController.swift; sourceTree = "<group>"; };
 		BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordUnitChooseController.swift; sourceTree = "<group>"; };
 		BFD72974232F6024002D79AD /* EnglishAPPDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnglishAPPDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFD72975232F6025002D79AD /* ZFCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCircleProgress.h; sourceTree = "<group>"; };
@@ -165,6 +169,15 @@
 				E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3A41B2237036FA007BABF7 /* SynExerciseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A41B0237036DF007BABF7 /* WriteLearnDetailController.swift */,
+				BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */,
+			);
+			path = SynExerciseDetails;
 			sourceTree = "<group>";
 		};
 		BF3E93632363E8A400422B8B /* Supporting Files */ = {
@@ -207,6 +220,7 @@
 		BF5787DC233487C30088EC33 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BF3A41B2237036FA007BABF7 /* SynExerciseDetails */,
 				BF5787E02334890C0088EC33 /* NewItemViewController.swift */,
 				BF5787E22334890C0088EC33 /* SynExercise.swift */,
 				BF5787E82334890C0088EC33 /* BookUnitChooseView.swift */,
@@ -430,6 +444,7 @@
 				BF156FEB233DC9D300FDD8BB /* ListeningCellHeadView.swift in Sources */,
 				BF66091223399EF000915F16 /* Inch.swift in Sources */,
 				BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */,
+				BF3A41B1237036DF007BABF7 /* WriteLearnDetailController.swift in Sources */,
 				BFEFE694235B2C5900E8A25B /* BaseUINavigationViewController.swift in Sources */,
 				BF0C7825235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift in Sources */,
 				BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */,
@@ -458,6 +473,7 @@
 				BF86BB912352AFA600A23C2F /* HeadBgView.swift in Sources */,
 				BF1A6A312338A94F00C3A908 /* Define.swift in Sources */,
 				BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */,
+				BFAAFD55237045BB008D8F0B /* ListeningLearnDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

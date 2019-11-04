@@ -113,6 +113,18 @@ extension LearnChooseListController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
+        switch headTitle {
+        case "写作学习":
+            let writeLearnDetailView = WriteLearnDetailController()
+            writeLearnDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(writeLearnDetailView, animated: true)
+             case "听力学习":
+                 let writeLearnDetailView = ListeningLearnDetailController()
+                 //writeLearnDetailView.key = data[indexPath.row]
+                 self.navigationController!.pushViewController(writeLearnDetailView, animated: true)
+        default:
+            break
+        }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return headData.count
