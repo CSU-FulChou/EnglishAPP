@@ -118,10 +118,31 @@ extension LearnChooseListController:UITableViewDataSource,UITableViewDelegate{
             let writeLearnDetailView = WriteLearnDetailController()
             writeLearnDetailView.key = data[indexPath.row]
             self.navigationController!.pushViewController(writeLearnDetailView, animated: true)
-             case "听力学习":
-                 let writeLearnDetailView = ListeningLearnDetailController()
-                 //writeLearnDetailView.key = data[indexPath.row]
-                 self.navigationController!.pushViewController(writeLearnDetailView, animated: true)
+        case "听力学习":
+            let writeLearnDetailView = ListeningLearnDetailController()
+            //writeLearnDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(writeLearnDetailView, animated: true)
+        case "日常用语":
+            let dailyLearnDetailView = DailyLearnController()
+            dailyLearnDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(dailyLearnDetailView, animated: true)
+        case "学校口语":
+            let schoolOvralDetailView = SchoolOralController()
+            schoolOvralDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(schoolOvralDetailView, animated: true)
+        case "常用短语":
+            let popularPhraseDetailView = SchoolOralController()
+            popularPhraseDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(popularPhraseDetailView, animated: true)
+        case "单词学习":
+            let wordLearnDetailView = SchoolOralController()
+            wordLearnDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(wordLearnDetailView, animated: true)
+        case "阅读学习":
+            let readLearnDetailView = ReadLearnController()
+            readLearnDetailView.key = data[indexPath.row]
+            self.navigationController!.pushViewController(readLearnDetailView, animated: true)
+        
         default:
             break
         }

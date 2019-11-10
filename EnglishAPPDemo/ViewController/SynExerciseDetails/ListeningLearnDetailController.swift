@@ -10,6 +10,7 @@ import UIKit
 
 class ListeningLearnDetailController: UIViewController {
     var isHide = false
+    var isPlay = true
     var titleLabelText_ZN = ""
     var titleView:UIView = {
         let titleView = UIView(frame: CGRect(x: 0, y: 71*Y_, width: SCREEN_WIDTH, height: 85*Y_))
@@ -60,6 +61,7 @@ class ListeningLearnDetailController: UIViewController {
         currentCourseLabel.textColor = UIColor(hexString: "#999999")
         return currentCourseLabel
      }()
+     var playBtn = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +78,7 @@ class ListeningLearnDetailController: UIViewController {
         
         self.view.addSubview(bg_HeadView)
         self.view.addSubview(backButton)
+        
         titleLabel_EN.text = "hello world"
         titleView.addSubview(titleLabel_EN)
         
@@ -90,7 +93,54 @@ class ListeningLearnDetailController: UIViewController {
         titleView.addSubview(nextCourseBtn)
         self.view.addSubview(isHidelabel)
         self.view.addSubview(titleView)
+        
+        setUI()
         // Do any additional setup after loading the view.
+    }
+    func setUI(){
+        // 播放按钮
+        playBtn = UIButton(frame: CGRect(x: 22*X_, y: 177*Y_, width: 18*X_, height: 22*Y_))
+        if isPlay{
+            playBtn.setImage(UIImage(named: "bt_pauseRed"), for: .normal)
+        }else{
+            playBtn.setImage(UIImage(named: "bt_beginRed"), for: .normal)
+        }
+        playBtn.addTarget(self, action: #selector(clickPlayer), for: .touchUpInside)
+        self.view.addSubview(playBtn)
+        
+        let progressLine = UIProgressView(frame: CGRect(x: 53*X_, y: 186*Y_, width: 300*X_, height: 1*Y_))
+        progressLine.setProgress(0.5, animated: true)
+        progressLine.progressTintColor = UIColor(hexString: "#ff8a87")
+        progressLine.trackTintColor = UIColor(hexString: "#d3d3d3")
+        self.view.addSubview(progressLine)
+        
+        let timeLabel = UILabel(frame: CGRect(x: 363*X_, y: 177*Y_, width: 40*X_, height: 17*Y_))
+        timeLabel.textColor = UIColor(hexString: "#999999")
+        timeLabel.text = "-00:53"
+        timeLabel.font = UIFont(name: timeLabel.font.fontName, size: 12)
+        self.view.addSubview(timeLabel)
+
+        let detailView = UIView(frame: CGRect(x: 0, y: 214*Y_, width: SCREEN_WIDTH, height: 523*Y_))
+        detailView.backgroundColor = UIColor(hexString: "#fffcfa")
+        
+        let detailLabel = UITextField(frame: CGRect(x: 22*X_, y: 16*Y_, width: 370*X_, height: 400*Y_))
+        detailLabel.textColor = UIColor(hexString: "#555555")
+        detailLabel.text = "将要学习的句子。"
+        detailLabel.textAlignment = .left
+        detailLabel.sizeToFit()
+        detailLabel.isUserInteractionEnabled = false
+        detailView.addSubview(detailLabel)
+        self.view.addSubview(detailView)
+    }
+    @objc func clickPlayer(){
+        if isPlay {
+            isPlay = false
+            playBtn.setImage(UIImage(named: "bt_beginRed"), for: .normal)
+        }else{
+            isPlay = true
+            playBtn.setImage(UIImage(named: "bt_pauseRed"), for: .normal)
+        }
+        
     }
     
     @objc func popBack(_ sender: Any) {

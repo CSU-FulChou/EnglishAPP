@@ -67,6 +67,13 @@
 		BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */; };
 		BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD72976232F6025002D79AD /* ZFCircleProgress.m */; };
 		BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7297C232F613E002D79AD /* ZFCountingLabel.m */; };
+		BFDE89922377A18500C0B67F /* DailyLearnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE89912377A18500C0B67F /* DailyLearnController.swift */; };
+		BFDE89952377A79A00C0B67F /* SchoolOralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE89942377A79A00C0B67F /* SchoolOralController.swift */; };
+		BFDE89972377A7BB00C0B67F /* ChooseVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE89962377A7BB00C0B67F /* ChooseVIew.swift */; };
+		BFDE89992377A98800C0B67F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE89982377A98800C0B67F /* DetailView.swift */; };
+		BFDE899B2377AC4C00C0B67F /* popularPhraseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE899A2377AC4C00C0B67F /* popularPhraseController.swift */; };
+		BFDE899D2377ACFE00C0B67F /* wordLearnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE899C2377ACFE00C0B67F /* wordLearnController.swift */; };
+		BFDE899F2377B91100C0B67F /* ReadLearnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE899E2377B91100C0B67F /* ReadLearnController.swift */; };
 		BFEFE694235B2C5900E8A25B /* BaseUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFE693235B2C5900E8A25B /* BaseUINavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +145,13 @@
 		BFD72976232F6025002D79AD /* ZFCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCircleProgress.m; sourceTree = "<group>"; };
 		BFD7297B232F613E002D79AD /* ZFCountingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCountingLabel.h; sourceTree = "<group>"; };
 		BFD7297C232F613E002D79AD /* ZFCountingLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCountingLabel.m; sourceTree = "<group>"; };
+		BFDE89912377A18500C0B67F /* DailyLearnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLearnController.swift; sourceTree = "<group>"; };
+		BFDE89942377A79A00C0B67F /* SchoolOralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolOralController.swift; sourceTree = "<group>"; };
+		BFDE89962377A7BB00C0B67F /* ChooseVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVIew.swift; sourceTree = "<group>"; };
+		BFDE89982377A98800C0B67F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BFDE899A2377AC4C00C0B67F /* popularPhraseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popularPhraseController.swift; sourceTree = "<group>"; };
+		BFDE899C2377ACFE00C0B67F /* wordLearnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordLearnController.swift; sourceTree = "<group>"; };
+		BFDE899E2377B91100C0B67F /* ReadLearnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadLearnController.swift; sourceTree = "<group>"; };
 		BFEFE693235B2C5900E8A25B /* BaseUINavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationViewController.swift; sourceTree = "<group>"; };
 		E2C8227791AF98DA47A579CD /* libPods-EnglishAPPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnglishAPPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -174,8 +188,14 @@
 		BF3A41B2237036FA007BABF7 /* SynExerciseDetails */ = {
 			isa = PBXGroup;
 			children = (
+				BFDE89932377A70000C0B67F /* CommonView */,
 				BF3A41B0237036DF007BABF7 /* WriteLearnDetailController.swift */,
 				BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */,
+				BFDE89912377A18500C0B67F /* DailyLearnController.swift */,
+				BFDE89942377A79A00C0B67F /* SchoolOralController.swift */,
+				BFDE899A2377AC4C00C0B67F /* popularPhraseController.swift */,
+				BFDE899C2377ACFE00C0B67F /* wordLearnController.swift */,
+				BFDE899E2377B91100C0B67F /* ReadLearnController.swift */,
 			);
 			path = SynExerciseDetails;
 			sourceTree = "<group>";
@@ -299,6 +319,15 @@
 				BFD7297C232F613E002D79AD /* ZFCountingLabel.m */,
 			);
 			path = ZFCircleProgress;
+			sourceTree = "<group>";
+		};
+		BFDE89932377A70000C0B67F /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				BFDE89962377A7BB00C0B67F /* ChooseVIew.swift */,
+				BFDE89982377A98800C0B67F /* DetailView.swift */,
+			);
+			path = CommonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,15 +472,18 @@
 				BF5787F42334890C0088EC33 /* BookUnitChooseView.swift in Sources */,
 				BF156FEB233DC9D300FDD8BB /* ListeningCellHeadView.swift in Sources */,
 				BF66091223399EF000915F16 /* Inch.swift in Sources */,
+				BFDE89992377A98800C0B67F /* DetailView.swift in Sources */,
 				BF1A6A332338E51700C3A908 /* OpinionFeedbackController.swift in Sources */,
 				BF3A41B1237036DF007BABF7 /* WriteLearnDetailController.swift in Sources */,
 				BFEFE694235B2C5900E8A25B /* BaseUINavigationViewController.swift in Sources */,
 				BF0C7825235DE84F00FF9CE2 /* IdentityTapGestureRecongnizer.swift in Sources */,
+				BFDE89952377A79A00C0B67F /* SchoolOralController.swift in Sources */,
 				BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */,
 				BF5787EC2334890C0088EC33 /* NewItemViewController.swift in Sources */,
 				BF578804233504E00088EC33 /* MyShelfController.swift in Sources */,
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
+				BFDE89972377A7BB00C0B67F /* ChooseVIew.swift in Sources */,
 				BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */,
 				BF5787F32334890C0088EC33 /* ChooseUnitViewController.swift in Sources */,
 				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
@@ -459,6 +491,7 @@
 				BF156FE9233D088A00FDD8BB /* StartView.swift in Sources */,
 				BF5787FC2334CC920088EC33 /* NoServiceController.swift in Sources */,
 				BF306FF523267FAD002ABD67 /* UIColor+valueRGB.swift in Sources */,
+				BFDE899B2377AC4C00C0B67F /* popularPhraseController.swift in Sources */,
 				BF5787F82334C3C10088EC33 /* RegisterController.swift in Sources */,
 				BF22BAC3234881ED002DE170 /* HomePageController.swift in Sources */,
 				BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */,
@@ -466,9 +499,12 @@
 				BF22BACD234982D7002DE170 /* ChooseLessionsView.swift in Sources */,
 				BF919B74231CA45600792E80 /* AppDelegate.swift in Sources */,
 				BF5787FA2334CB1A0088EC33 /* RecommendationController.swift in Sources */,
+				BFDE899D2377ACFE00C0B67F /* wordLearnController.swift in Sources */,
+				BFDE899F2377B91100C0B67F /* ReadLearnController.swift in Sources */,
 				BF03737823640D4100D09393 /* SynExerciseImageView.swift in Sources */,
 				BF5787F62334AA2F0088EC33 /* LoginController.swift in Sources */,
 				BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */,
+				BFDE89922377A18500C0B67F /* DailyLearnController.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,
 				BF86BB912352AFA600A23C2F /* HeadBgView.swift in Sources */,
 				BF1A6A312338A94F00C3A908 /* Define.swift in Sources */,
@@ -624,7 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW2NQM59K6;
 				INFOPLIST_FILE = EnglishAPPDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,7 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW2NQM59K6;
 				INFOPLIST_FILE = EnglishAPPDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
