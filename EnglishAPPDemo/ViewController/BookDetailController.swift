@@ -58,6 +58,7 @@ class BookDetailController: UIViewController {
         
         for index in 0...1{
             let test = Bundle.main.loadNibNamed("ListeningCellView", owner: nil, options: nil)?.first as? ListeningCellView
+            
             test?.enContent.text = "try say hello"
             test?.znContentLabel.text = "试着说中文"
             test?.frame = CGRect(x: 40*X_, y: 180*Y_+CGFloat(index)*150, width: 300*X_, height: 130*Y_)

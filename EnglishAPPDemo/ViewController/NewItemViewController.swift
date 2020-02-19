@@ -13,7 +13,7 @@ class NewItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var table :UIButton
+//        var table :UIButton
     
         
         

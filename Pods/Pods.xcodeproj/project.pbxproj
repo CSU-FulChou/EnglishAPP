@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = "Reveal-SDK";
-			productName = "Reveal-SDK";
 		};
 /* End PBXAggregateTarget section */
 
@@ -34,14 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0245352FB93149B1099F990AB036B18F /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = "RevealServer-4/iOS/RevealServer.framework"; sourceTree = "<group>"; };
 		052D877CEB76823027D8586354C75217 /* Pods-EnglishAPPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EnglishAPPDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		100024FCFA508882DDDB959B8B8845B7 /* libPods-EnglishAPPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnglishAPPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		100024FCFA508882DDDB959B8B8845B7 /* libPods-EnglishAPPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-EnglishAPPDemo.a"; path = "libPods-EnglishAPPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4783B98F8DDC9717FF18B12632FA4A8B /* Pods-EnglishAPPDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EnglishAPPDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		4AA2AF8B93DB9343FB11CF23E274C0A0 /* Reveal-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reveal-SDK.xcconfig"; sourceTree = "<group>"; };
 		65F2F8F649EA0B33784B484F40EED60B /* Pods-EnglishAPPDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EnglishAPPDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		66187FEE540A54755E8E4B54024849A9 /* Pods-EnglishAPPDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EnglishAPPDemo-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7881CDF09E5AFE5AF0A686E0783B7F0E /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = "RevealServer-2/iOS/RevealServer.framework"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEC5A68B8AFB73E62306A57C1F94D117 /* Reveal-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reveal-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		AF40D2130BD4ACF543446AB3D9EEE68D /* Reveal-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reveal-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		FB3DFA540A0D930E25F4DD3B6CEE8BC1 /* Pods-EnglishAPPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EnglishAPPDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FEBD43B27861E91BE6CEB83F0B8959DE /* Pods-EnglishAPPDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EnglishAPPDemo-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,38 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BFA3EC3FFC63AEA607637F9F7F1B5E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7881CDF09E5AFE5AF0A686E0783B7F0E /* RevealServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49E4B85E586C360289D135A0F5364F3A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				933705988E64D2FF8A6C44A636080020 /* Reveal-SDK */,
+				FBCBC0538F99268471A4F00221369B28 /* Reveal-SDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		88026E23DD6F440B9315EDEBB44A8F78 /* Support Files */ = {
+		8B911A8D7046E83D0246F76F54E2B811 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AA2AF8B93DB9343FB11CF23E274C0A0 /* Reveal-SDK.xcconfig */,
+				AF40D2130BD4ACF543446AB3D9EEE68D /* Reveal-SDK.debug.xcconfig */,
+				AEC5A68B8AFB73E62306A57C1F94D117 /* Reveal-SDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Reveal-SDK";
-			sourceTree = "<group>";
-		};
-		933705988E64D2FF8A6C44A636080020 /* Reveal-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				94C17B5290E96798B5C07CF0BFD08595 /* Frameworks */,
-				88026E23DD6F440B9315EDEBB44A8F78 /* Support Files */,
-			);
-			path = "Reveal-SDK";
-			sourceTree = "<group>";
-		};
-		94C17B5290E96798B5C07CF0BFD08595 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0245352FB93149B1099F990AB036B18F /* RevealServer.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE08703F0B2422233A903688A4B7900E /* Targets Support Files */ = {
@@ -139,6 +131,16 @@
 			path = "Target Support Files/Pods-EnglishAPPDemo";
 			sourceTree = "<group>";
 		};
+		FBCBC0538F99268471A4F00221369B28 /* Reveal-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3BFA3EC3FFC63AEA607637F9F7F1B5E7 /* Frameworks */,
+				8B911A8D7046E83D0246F76F54E2B811 /* Support Files */,
+			);
+			name = "Reveal-SDK";
+			path = "Reveal-SDK";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -180,7 +182,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -270,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,23 +284,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		22DB3804CEC01B94A0E56D68024C1D22 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AA2AF8B93DB9343FB11CF23E274C0A0 /* Reveal-SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		445E0B7F43A5564A0FB7273024870871 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -323,9 +308,9 @@
 			};
 			name = Release;
 		};
-		4C6FB1643AD58331083601B84CBAEBE0 /* Debug */ = {
+		7CC3856582D9B5F15367364548ACB9E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AA2AF8B93DB9343FB11CF23E274C0A0 /* Reveal-SDK.xcconfig */;
+			baseConfigurationReference = AF40D2130BD4ACF543446AB3D9EEE68D /* Reveal-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -338,6 +323,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		A20793482C6E54422ED1AF9896CCE64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC5A68B8AFB73E62306A57C1F94D117 /* Reveal-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		A8946B4F6AC1A44EF7CDDF4402A801CB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -409,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,8 +438,8 @@
 		676F4BB658125F19314000817E9BFB9D /* Build configuration list for PBXAggregateTarget "Reveal-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C6FB1643AD58331083601B84CBAEBE0 /* Debug */,
-				22DB3804CEC01B94A0E56D68024C1D22 /* Release */,
+				7CC3856582D9B5F15367364548ACB9E4 /* Debug */,
+				A20793482C6E54422ED1AF9896CCE64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

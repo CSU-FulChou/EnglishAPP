@@ -1,21 +1,21 @@
 PODS:
-  - Reveal-SDK (4)
+  - Reveal-SDK (2)
 
 DEPENDENCIES:
-  - Reveal-SDK (from `https://git.coding.net/kakukeme/Reveal-SDK.git`)
+  - Reveal-SDK (from `https://git.dev.tencent.com/sy5075391/Holy-Reveal.git`)
 
 EXTERNAL SOURCES:
   Reveal-SDK:
-    :git: https://git.coding.net/kakukeme/Reveal-SDK.git
+    :git: https://git.dev.tencent.com/sy5075391/Holy-Reveal.git
 
 CHECKOUT OPTIONS:
   Reveal-SDK:
-    :commit: ffdbc623851467394a99effb2dfced2f61c358f1
-    :git: https://git.coding.net/kakukeme/Reveal-SDK.git
+    :commit: da24f53c92f245eea3e5ebb2e3c0645a7263d027
+    :git: https://git.dev.tencent.com/sy5075391/Holy-Reveal.git
 
 SPEC CHECKSUMS:
-  Reveal-SDK: 6504f524a2e7138913251139ba30a03b3da91792
+  Reveal-SDK: 5d293e58da9d435181041ef5ce8efc2a8ea4d5c5
 
-PODFILE CHECKSUM: 78e4229643a78a1b95b804fb5bfd8de9bc1d18d8
+PODFILE CHECKSUM: a3d66941c0665a178b4d9a8ad17caa6f9b04ede7
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.0.beta.2

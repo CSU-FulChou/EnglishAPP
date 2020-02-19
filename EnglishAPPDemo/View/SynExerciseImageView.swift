@@ -10,6 +10,7 @@ import UIKit
 // 小的学习图标：
 class SynExerciseImageView: UIImageView {
     var iconImageView:UIImageView = UIImageView()
+    
     var titleLabel:UILabel{
         let title = UILabel(frame: CGRect(x: 26*X_, y:22*Y_, width: 75*X_, height: 25*Y_))
         title.font = title.font.withSize(18)
@@ -29,6 +30,7 @@ class SynExerciseImageView: UIImageView {
     
     
     init(frame: CGRect,bgImageName bgname:String,iconImageName name2:String,Iconframe frameIcon:CGRect,withTitleAndDetail title:String,_ detail:String) {
+        
         iconImageView = UIImageView(frame:frameIcon)
         super.init(frame:frame)
         
