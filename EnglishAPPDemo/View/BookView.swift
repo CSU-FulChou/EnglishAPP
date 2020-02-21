@@ -8,40 +8,71 @@
 
 import UIKit
 
+@IBDesignable
 class BookView: UIView {
 
     @IBOutlet weak var bookImageView: UIImageView!
     
     @IBOutlet weak var progressLabel: UILabel!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    
+  
+    @IBInspectable var bookImage: UIImage = UIImage() {
+           didSet {
+               self.bookImageView.image = bookImage
+           }
+       }
+    
+    
+    // 在storyborad中调用了
     override func awakeFromNib() {
-          super.awakeFromNib()
+        print("call awakeFromNib")
         
+          super.awakeFromNib()
+
       }
     
-//    let nibName = "BookView"
-//    var contentView: UIView?
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
 //
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//
-//        guard let view = loadViewFromNib() else { return }
-//        view.frame = self.bounds
-//        self.addSubview(view)
-//        contentView = view
 //    }
-//
-//    func loadViewFromNib() -> UIView? {
-//        let bundle = Bundle(for: type(of: self))
-//        let nib = UINib(nibName: nibName, bundle: bundle)
-//        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    
+    
+//    static func loadView()->BookView{
+//        return Bundle.main.loadNibNamed("BookView", owner: nil, options: nil)?.first as! BookView
 //    }
+    
+ 
+    //初始化时将xib中的view添加进来
+      var contentView:UIView!
+    
+    ///
+    /// - 代码中实例画的时候调用
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        print("frame")
+        contentView = loadViewFromNib()
+        addSubview(contentView)
+  
+    }
 
+     /// 从storyborad中实例化的时候调用：
+    required init?(coder aDecoder: NSCoder) {
+        print("coder")
+        super.init(coder: aDecoder)
+        contentView = loadViewFromNib()
+        addSubview(contentView)
+
+    }
+
+    //加载xib
+    func loadViewFromNib() -> UIView {
+        let className = type(of: self)
+        let bundle = Bundle(for: className)
+        let name = NSStringFromClass(className).components(separatedBy: ".").last
+        
+        let nib = UINib(nibName: name!, bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        return view
+    }
+    
 }

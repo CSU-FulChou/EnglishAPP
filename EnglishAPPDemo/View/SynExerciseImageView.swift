@@ -20,13 +20,7 @@ class SynExerciseImageView: UIImageView {
     }
     var detailLabel:UILabel = UILabel()
     
-//    var detailLabel:UILabel{
-//        let detail = UILabel(frame: CGRect(x: 26*X_, y:54*Y_, width: 99*X_, height: 15*Y_))
-//        detail.font = detail.font.withSize(11)
-//        //detail.sizeToFit()
-//        self.addSubview(detail)
-//        return detail
-//    }
+
     
     
     init(frame: CGRect,bgImageName bgname:String,iconImageName name2:String,Iconframe frameIcon:CGRect,withTitleAndDetail title:String,_ detail:String) {

@@ -38,20 +38,6 @@
                                     <constraint firstAttribute="height" constant="118" id="mEh-Qi-tkZ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFH-eQ-ATd">
-                                <rect key="frame" x="171" y="80" width="62" height="29.999999999999993"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="同步练习">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-wA-kkC">
-                                <rect key="frame" x="297" y="80" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="课外读物">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小学英语学伴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eY-Kv-SlC">
                                 <rect key="frame" x="155" y="35" width="104" height="23"/>
                                 <constraints>
@@ -74,27 +60,60 @@
                                     <action selector="showOwnerCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ase-GN-wcc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-qS-U45">
-                                <rect key="frame" x="38" y="82" width="50" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
-                                <state key="normal" title="我的书架">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="toMyshelf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kb9-W1-Cud"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-rl-w9W">
                                 <rect key="frame" x="0.0" y="118" width="414" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="vId-El-enM"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="b63-ND-dgY"/>
                             </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="KKH-Jm-9tK">
+                                <rect key="frame" x="39" y="90" width="336" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-qS-U45">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Voy-gW-LQ7"/>
+                                            <constraint firstAttribute="width" constant="63" id="rLg-v5-jqs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                                        <state key="normal" title="我的书架">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toMyshelf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kb9-W1-Cud"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFH-eQ-ATd">
+                                        <rect key="frame" x="137" y="0.0" width="63" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3YG-W1-UG0"/>
+                                            <constraint firstAttribute="width" constant="63" id="4lB-yC-TaR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="同步练习">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toSynPractise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJY-gr-cGr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-wA-kkC">
+                                        <rect key="frame" x="274" y="0.0" width="62" height="20"/>
+                                        <state key="normal" title="课外读物">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toOutsideBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swy-Is-1s5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b7s-Xd-UNA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8u6-pf-XAL"/>
+                            <constraint firstItem="KKH-Jm-9tK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="90" id="E1l-lj-vK0"/>
+                            <constraint firstItem="KKH-Jm-9tK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gn5-Tz-LrR"/>
                             <constraint firstItem="3eY-Kv-SlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hbg-Of-RIr"/>
                             <constraint firstItem="3eY-Kv-SlC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="Nu6-4Y-thA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3b2-4V-1Uz" secondAttribute="trailing" constant="22" id="Ug0-wX-yt9"/>
@@ -126,13 +145,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已选课本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-mE-54L">
-                                <rect key="frame" x="14" y="390" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgTodayCourse" translatesAutoresizingMaskIntoConstraints="NO" id="uAT-sz-c72">
                                 <rect key="frame" x="20" y="17" width="376" height="156"/>
                                 <constraints>
@@ -141,7 +153,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-vE-CpG">
-                                <rect key="frame" x="165" y="63" width="186.33333333333337" height="48.666666666666657"/>
+                                <rect key="frame" x="165" y="63" width="192" height="48.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0H-JD-9Sa">
                                         <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
@@ -149,8 +161,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back to scholl!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzZ-r0-gSm">
-                                        <rect key="frame" x="0.0" y="28.333333333333329" width="186.33333333333334" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back to school!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzZ-r0-gSm">
+                                        <rect key="frame" x="0.0" y="28.333333333333329" width="192" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -160,8 +172,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="Eax-OS-xJG">
                                 <rect key="frame" x="105" y="117" width="260" height="43"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwE-SC-0B1" userLabel="同步练习2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gt-88-rtj" userLabel="开始学习">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="oXH-IU-EEf"/>
+                                            <constraint firstAttribute="width" constant="90" id="rhI-0v-dtc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" backgroundImage="bt_learningReport"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwE-SC-0B1" userLabel="同步练习2">
+                                        <rect key="frame" x="85" y="0.0" width="90" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="ab4-lB-J1a"/>
                                             <constraint firstAttribute="width" constant="90" id="hto-KR-GdN"/>
@@ -170,14 +191,6 @@
                                         <connections>
                                             <action selector="clickSynExercise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJU-hl-krz"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gt-88-rtj" userLabel="开始学习">
-                                        <rect key="frame" x="85" y="0.0" width="90" height="43"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="oXH-IU-EEf"/>
-                                            <constraint firstAttribute="width" constant="90" id="rhI-0v-dtc"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="bt_learningReport"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmD-29-pq8" userLabel="学习报告">
                                         <rect key="frame" x="170" y="0.0" width="90" height="43"/>
@@ -198,22 +211,14 @@
                                 <color key="textColor" red="1" green="0.99997597932815552" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-FL-bEG" customClass="BookView" customModule="EnglishAPPDemo" customModuleProvider="target">
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-FL-bEG" customClass="BookView" customModule="EnglishAPPDemo" customModuleProvider="target">
                                 <rect key="frame" x="14" y="194" width="119" height="166"/>
-                                <color key="backgroundColor" red="0.35294117650000001" green="0.68235294120000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="166" id="2W6-YS-ctS"/>
                                     <constraint firstAttribute="width" constant="119" id="kwL-7j-OLA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkT-eq-AqC">
-                                <rect key="frame" x="297" y="410" width="97" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="查看更多 &gt;">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c1I-wy-3jC">
                                 <rect key="frame" x="148" y="191" width="245.33333333333337" height="164.66666666666663"/>
                                 <subviews>
@@ -301,35 +306,65 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D69-tW-Mlt">
+                                <rect key="frame" x="0.0" y="434" width="414" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Y9w-Fy-RJj"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FJJ-eP-1QS"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选课本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngY-z5-bpB">
+                                <rect key="frame" x="20" y="395" width="77.666666666666671" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObL-iP-pIi">
+                                <rect key="frame" x="342" y="383.66666666666669" width="53" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="查看更多&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="GKO-RP-pep" firstAttribute="trailing" secondItem="EfG-oe-jrd" secondAttribute="trailing" constant="55.670000000000002" id="6IX-V4-Rym"/>
                             <constraint firstItem="c1I-wy-3jC" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="bottom" constant="18" id="BR3-uV-6l7"/>
                             <constraint firstItem="hb4-vE-CpG" firstAttribute="leading" secondItem="uAT-sz-c72" secondAttribute="leading" constant="145" id="FQs-bl-L5a"/>
+                            <constraint firstItem="ngY-z5-bpB" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="20" id="J60-14-dku"/>
                             <constraint firstItem="v0Y-FL-bEG" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="bottom" constant="21" id="JRA-Zo-Ewu"/>
                             <constraint firstItem="Eax-OS-xJG" firstAttribute="top" secondItem="GKO-RP-pep" secondAttribute="top" constant="117" id="LYE-4Q-PcF"/>
                             <constraint firstItem="hb4-vE-CpG" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="top" constant="46" id="MMq-0g-rEk"/>
                             <constraint firstItem="uAT-sz-c72" firstAttribute="top" secondItem="GKO-RP-pep" secondAttribute="top" constant="17" id="SYQ-aX-Y4d"/>
                             <constraint firstItem="v0Y-FL-bEG" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="14" id="TIa-en-mQl"/>
                             <constraint firstItem="sH2-lo-i41" firstAttribute="centerX" secondItem="XIP-4u-Zvh" secondAttribute="centerX" id="UlQ-cU-Y8o"/>
+                            <constraint firstItem="GKO-RP-pep" firstAttribute="trailing" secondItem="ObL-iP-pIi" secondAttribute="trailing" constant="19" id="Yam-DD-Y11"/>
                             <constraint firstItem="uAT-sz-c72" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="20" id="aeF-dj-1RF"/>
                             <constraint firstItem="UZC-hq-oUU" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="bottom" constant="58" id="bY2-gx-p3a"/>
                             <constraint firstItem="Eax-OS-xJG" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="105" id="iMl-Et-0Ft"/>
                             <constraint firstItem="EfG-oe-jrd" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="bottom" constant="54" id="kOl-Sk-z7C"/>
+                            <constraint firstItem="ObL-iP-pIi" firstAttribute="top" secondItem="c1I-wy-3jC" secondAttribute="bottom" constant="28" id="nMe-Mw-Zc6"/>
                             <constraint firstItem="UZC-hq-oUU" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="204" id="pAB-2F-5nJ"/>
+                            <constraint firstItem="ngY-z5-bpB" firstAttribute="top" secondItem="v0Y-FL-bEG" secondAttribute="bottom" constant="35" id="qJx-eP-CJf"/>
                             <constraint firstItem="c1I-wy-3jC" firstAttribute="leading" secondItem="GKO-RP-pep" secondAttribute="leading" constant="148" id="rxg-9W-oQw"/>
                             <constraint firstItem="sH2-lo-i41" firstAttribute="top" secondItem="uAT-sz-c72" secondAttribute="top" constant="15" id="zKn-Pl-Soh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GKO-RP-pep"/>
                     </view>
                     <connections>
-                        <outlet property="bookView1" destination="v0Y-FL-bEG" id="RnV-3r-cnU"/>
+                        <outlet property="accuracyProgress" destination="e6o-Pm-5x5" id="wsS-F6-zuY"/>
+                        <outlet property="accuracyProgressLabel" destination="tDd-Mf-bjh" id="LPl-ho-gMk"/>
+                        <outlet property="bookScrollView" destination="D69-tW-Mlt" id="Lua-x8-7Cz"/>
+                        <outlet property="bookView" destination="v0Y-FL-bEG" id="Iep-Hw-6dL"/>
+                        <outlet property="listenProgress" destination="NWU-p9-TgF" id="PuJ-nH-Y2K"/>
+                        <outlet property="listenProgressLabel" destination="Euj-8m-MFj" id="v8e-BZ-RgD"/>
+                        <outlet property="readProgress" destination="8ha-Fc-12c" id="1uU-bp-S6p"/>
+                        <outlet property="readProgressLabel" destination="xyw-8o-V1e" id="uvV-0g-mlY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bet-a5-pHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5942028985507" y="-330.16304347826087"/>
+            <point key="canvasLocation" x="1111.5942028985507" y="-338.31521739130437"/>
         </scene>
         <!--BooksChoose-->
         <scene sceneID="ca7-PR-J4Z">
@@ -453,6 +488,32 @@
             </objects>
             <point key="canvasLocation" x="2593" y="210"/>
         </scene>
+        <!--Outside ReadingVC-->
+        <scene sceneID="nZF-6l-IfR">
+            <objects>
+                <viewController storyboardIdentifier="OutsideReadingVC" id="Ju5-gf-pWc" customClass="OutsideReadingVC" customModule="EnglishAPPDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eh2-Pb-mG2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5t-WN-5kO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="fpB-yY-eZy"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hYu-Eb-GOS"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rhf-tB-dhl"/>
+                    </view>
+                    <connections>
+                        <outlet property="bookContentScrollView" destination="n5t-WN-5kO" id="VMD-Ry-BSB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93T-fe-NX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="1016.5760869565219"/>
+        </scene>
         <!--ownerCenter-->
         <scene sceneID="ucp-Be-dyj">
             <objects>
@@ -539,7 +600,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoi-o0-P49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="868"/>
+            <point key="canvasLocation" x="1928" y="889"/>
         </scene>
         <!--topUp-->
         <scene sceneID="OZ4-7G-IjV">
@@ -959,7 +1020,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HME-Ka-jjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5654" y="867"/>
+            <point key="canvasLocation" x="5442" y="889"/>
         </scene>
         <!--RecommandSoft-->
         <scene sceneID="0Tv-se-Yyp">
@@ -974,7 +1035,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCB-4r-bY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6451" y="867"/>
+            <point key="canvasLocation" x="6191" y="889"/>
         </scene>
         <!--Login-->
         <scene sceneID="mOT-xc-3pF">
@@ -1023,7 +1084,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zJs-Ru-Q1p">
-                                <rect key="frame" x="88.999999999999986" y="85" width="236.00000000000003" height="73.666666666666686"/>
+                                <rect key="frame" x="89" y="85" width="236" height="73.666666666666686"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-P2-Aeg">
                                 <rect key="frame" x="168" y="659" width="78" height="30"/>
@@ -1050,7 +1111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFO-ZG-iXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816" y="1587"/>
+            <point key="canvasLocation" x="1897" y="1595"/>
         </scene>
         <!--Register-->
         <scene sceneID="9q0-UY-cTD">
@@ -1239,7 +1300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUa-K1-paH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="-1314"/>
+            <point key="canvasLocation" x="1112" y="-1083"/>
         </scene>
         <!--BookDetail-->
         <scene sceneID="1Rr-Zd-8Mb">
@@ -1340,15 +1401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ai7-dI-dv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="-1314"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="aOE-qZ-kC7">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="kfe-e9-0Jw" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rg9-Fv-u4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2639" y="-1314"/>
+            <point key="canvasLocation" x="1762" y="-1083"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="CPI-5F-ShJ">

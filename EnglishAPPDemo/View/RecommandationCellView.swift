@@ -18,9 +18,7 @@ class RecommandationCellView: UIView {
     
     override init(frame:CGRect){
         super.init(frame: frame)
-        //title.text = "1111"
-        
-       // setupSubViews()
+
     }
     
     required init?(coder aDecoder: NSCoder) {

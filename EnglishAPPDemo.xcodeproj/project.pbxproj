@@ -68,6 +68,9 @@
 		BFC372C923FD2AAD00092E17 /* MyshelfFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC372C823FD2AAD00092E17 /* MyshelfFirstViewController.swift */; };
 		BFC372CB23FD5D1700092E17 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC372CA23FD5D1700092E17 /* BookView.swift */; };
 		BFC372CD23FD5DD300092E17 /* BookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC372CC23FD5DD300092E17 /* BookView.xib */; };
+		BFC372CF23FFDC1000092E17 /* OutsideReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC372CE23FFDC1000092E17 /* OutsideReadingVC.swift */; };
+		BFC372D123FFDD1F00092E17 /* OutsideBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC372D023FFDD1F00092E17 /* OutsideBook.swift */; };
+		BFC372D323FFDD2C00092E17 /* OutsideBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC372D223FFDD2C00092E17 /* OutsideBook.xib */; };
 		BFD72977232F6025002D79AD /* ZFCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD72976232F6025002D79AD /* ZFCircleProgress.m */; };
 		BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7297C232F613E002D79AD /* ZFCountingLabel.m */; };
 		BFDE89922377A18500C0B67F /* DailyLearnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDE89912377A18500C0B67F /* DailyLearnController.swift */; };
@@ -146,6 +149,9 @@
 		BFC372C823FD2AAD00092E17 /* MyshelfFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyshelfFirstViewController.swift; sourceTree = "<group>"; };
 		BFC372CA23FD5D1700092E17 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		BFC372CC23FD5DD300092E17 /* BookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookView.xib; sourceTree = "<group>"; };
+		BFC372CE23FFDC1000092E17 /* OutsideReadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideReadingVC.swift; sourceTree = "<group>"; };
+		BFC372D023FFDD1F00092E17 /* OutsideBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideBook.swift; sourceTree = "<group>"; };
+		BFC372D223FFDD2C00092E17 /* OutsideBook.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutsideBook.xib; sourceTree = "<group>"; };
 		BFD72974232F6024002D79AD /* EnglishAPPDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnglishAPPDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFD72975232F6025002D79AD /* ZFCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFCircleProgress.h; sourceTree = "<group>"; };
 		BFD72976232F6025002D79AD /* ZFCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFCircleProgress.m; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 				BF03737723640D4100D09393 /* SynExerciseImageView.swift */,
 				BFC372CA23FD5D1700092E17 /* BookView.swift */,
 				BFC372CC23FD5DD300092E17 /* BookView.xib */,
+				BFC372D023FFDD1F00092E17 /* OutsideBook.swift */,
+				BFC372D223FFDD2C00092E17 /* OutsideBook.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +285,7 @@
 				BF3E93602363159600422B8B /* testViewController.swift */,
 				BF341953236706C400AFDC0C /* LearnChooseListController.swift */,
 				BFC372C823FD2AAD00092E17 /* MyshelfFirstViewController.swift */,
+				BFC372CE23FFDC1000092E17 /* OutsideReadingVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -404,6 +413,7 @@
 				BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */,
 				BFBA2CA823FD16F5009A146F /* Main.storyboard in Resources */,
 				BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */,
+				BFC372D323FFDD2C00092E17 /* OutsideBook.xib in Resources */,
 				BF156FE7233CE54400FDD8BB /* ListeningCellView.xib in Resources */,
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF0373742363FD0A00D09393 /* SynExerciseBigView.xib in Resources */,
@@ -474,6 +484,7 @@
 				BF22BABD23486614002DE170 /* OwnerCenterControllerController.swift in Sources */,
 				BF5788022334DB180088EC33 /* BookCell.swift in Sources */,
 				BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */,
+				BFC372D123FFDD1F00092E17 /* OutsideBook.swift in Sources */,
 				BF22BABF23486F22002DE170 /* OwnerMenuTableViewCell.swift in Sources */,
 				BF66091323399EF000915F16 /* Auto.swift in Sources */,
 				BF919B76231CA45600792E80 /* ViewController.swift in Sources */,
@@ -496,6 +507,7 @@
 				BFD7297D232F613E002D79AD /* ZFCountingLabel.m in Sources */,
 				BF5787D72333AB460088EC33 /* UnitChooseCell.swift in Sources */,
 				BFDE89972377A7BB00C0B67F /* ChooseVIew.swift in Sources */,
+				BFC372CF23FFDC1000092E17 /* OutsideReadingVC.swift in Sources */,
 				BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */,
 				BF5787F32334890C0088EC33 /* ChooseUnitViewController.swift in Sources */,
 				BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */,
