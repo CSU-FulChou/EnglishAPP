@@ -375,7 +375,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_head" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2j-qV-gx2">
-                                <rect key="frame" x="0.0" y="-78" width="414" height="71"/>
+                                <rect key="frame" x="0.0" y="-149" width="414" height="142"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPJ-tQ-z4D">
                                 <rect key="frame" x="176" y="45" width="62" height="30"/>
@@ -600,7 +600,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoi-o0-P49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="889"/>
+            <point key="canvasLocation" x="1854" y="880"/>
         </scene>
         <!--topUp-->
         <scene sceneID="OZ4-7G-IjV">
@@ -1111,7 +1111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFO-ZG-iXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="1595"/>
+            <point key="canvasLocation" x="1854" y="1581"/>
         </scene>
         <!--Register-->
         <scene sceneID="9q0-UY-cTD">
@@ -1348,6 +1348,9 @@
                                             <constraint firstAttribute="width" constant="46" id="m4o-Fu-SsA"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Icon_nextPage"/>
+                                        <connections>
+                                            <action selector="clickNextPageBtn:" destination="whA-AT-wj0" eventType="touchUpInside" id="WZj-a1-zv1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1395,8 +1398,11 @@
                         <viewLayoutGuide key="safeArea" id="Btp-sI-3Lq"/>
                     </view>
                     <connections>
+                        <outlet property="bookView" destination="vN0-qh-MCI" id="n9o-hA-nKW"/>
                         <outlet property="chooseUnitBtn" destination="bka-Qf-95B" id="aYU-Yl-VX3"/>
                         <outlet property="contentsView" destination="S5o-Pr-cYu" id="A0I-1w-AEv"/>
+                        <outlet property="lastCourseLabel" destination="yEI-13-2F7" id="wrd-Kb-atO"/>
+                        <outlet property="nextCourseLabel" destination="71W-UD-gX0" id="SpQ-fP-hc3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ai7-dI-dv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

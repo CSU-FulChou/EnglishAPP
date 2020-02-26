@@ -92,8 +92,10 @@ class MyshelfFirstViewController: UIViewController {
     }
     
     @objc func toUnitChoose(){
-        print("hhh")
+       
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         let unitChooseVC = storyboard.instantiateViewController(withIdentifier: "BookUnitChooseView")
         self.navigationController?.pushViewController(unitChooseVC, animated:true )
         
@@ -111,7 +113,7 @@ extension MyshelfFirstViewController:UIScrollViewDelegate{
         
     }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        print("2222")
+       
     }
     
 }

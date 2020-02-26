@@ -17,6 +17,7 @@ class OutsideReadingVC: UIViewController {
         
         let outsideReadView = OutsideBook(frame: CGRect(x: 0, y: 22, width: SCREEN_WIDTH, height: 132))
         outsideReadView.isLock = true
+//        outsideReadView.test()
     bookContentScrollView.addSubview(outsideReadView)
         
         bookContentScrollView.contentSize =

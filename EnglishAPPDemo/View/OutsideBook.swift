@@ -72,7 +72,16 @@ class OutsideBook: UIView {
     var contentView:UIView!
     
     ///
-    /// - 代码中实例画的时候调用
+    /// - hello
+    ///
+    /// - 代码中实例化的时候调用
+    //TODO: -以后记得要做：
+    func test(){
+        
+    }
+    //FIXME: - 记得修改错误
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         print("frame")

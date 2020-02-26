@@ -50,6 +50,8 @@
 		BF57880C23360DEE0088EC33 /* TopUpCreditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */; };
 		BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5C1776233F0C51007B8DCC /* SettingView.swift */; };
 		BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5C1778233F0C6E007B8DCC /* SettingView.xib */; };
+		BF6280072401536E00447343 /* BookUnitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6280062401536E00447343 /* BookUnitImageView.swift */; };
+		BF6280092401538C00447343 /* BookUnitImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6280082401538C00447343 /* BookUnitImageView.xib */; };
 		BF66091223399EF000915F16 /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66091023399EF000915F16 /* Inch.swift */; };
 		BF66091323399EF000915F16 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66091123399EF000915F16 /* Auto.swift */; };
 		BF6FD50023362867004021D1 /* TopUpRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6FD4FF23362867004021D1 /* TopUpRecordController.swift */; };
@@ -128,6 +130,8 @@
 		BF57880B23360DEE0088EC33 /* TopUpCreditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCreditController.swift; sourceTree = "<group>"; };
 		BF5C1776233F0C51007B8DCC /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		BF5C1778233F0C6E007B8DCC /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		BF6280062401536E00447343 /* BookUnitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUnitImageView.swift; sourceTree = "<group>"; };
+		BF6280082401538C00447343 /* BookUnitImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookUnitImageView.xib; sourceTree = "<group>"; };
 		BF66090F23399EF000915F16 /* AutoInch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoInch.h; sourceTree = "<group>"; };
 		BF66091023399EF000915F16 /* Inch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
 		BF66091123399EF000915F16 /* Auto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 				BFC372CC23FD5DD300092E17 /* BookView.xib */,
 				BFC372D023FFDD1F00092E17 /* OutsideBook.swift */,
 				BFC372D223FFDD2C00092E17 /* OutsideBook.xib */,
+				BF6280062401536E00447343 /* BookUnitImageView.swift */,
+				BF6280082401538C00447343 /* BookUnitImageView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC372CD23FD5DD300092E17 /* BookView.xib in Resources */,
+				BF6280092401538C00447343 /* BookUnitImageView.xib in Resources */,
 				BF156FED233DC9E400FDD8BB /* ListeningCellHeadView.xib in Resources */,
 				BFBA2CA823FD16F5009A146F /* Main.storyboard in Resources */,
 				BF5C1779233F0C6E007B8DCC /* SettingView.xib in Resources */,
@@ -530,6 +537,7 @@
 				BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */,
 				BFDE89922377A18500C0B67F /* DailyLearnController.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,
+				BF6280072401536E00447343 /* BookUnitImageView.swift in Sources */,
 				BF86BB912352AFA600A23C2F /* HeadBgView.swift in Sources */,
 				BF1A6A312338A94F00C3A908 /* Define.swift in Sources */,
 				BF5788092335088B0088EC33 /* BookInShelf.swift in Sources */,

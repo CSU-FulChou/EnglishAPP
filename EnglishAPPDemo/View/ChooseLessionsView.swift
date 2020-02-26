@@ -45,6 +45,7 @@ class ChooseLessionsView: UIView {
 }
 
 extension ChooseLessionsView :UITableViewDelegate,UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if leftMenu == tableView{
@@ -77,6 +78,9 @@ extension ChooseLessionsView :UITableViewDelegate,UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
         print(indexPath)
     }
 
@@ -89,15 +93,8 @@ extension ChooseLessionsView :UITableViewDelegate,UITableViewDataSource{
 //           }
 //       }
 //
-//       //分区下单元格数量
-//       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//           if leftTableView == tableView {
-//               return leftTableData.count
-//           } else {
-//               return rightTableData[section].count
-//           }
-//       }
-//
+
+    
 //       //返回自定义单元格
 //       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
 //           -> UITableViewCell {
@@ -181,5 +178,5 @@ extension ChooseLessionsView :UITableViewDelegate,UITableViewDataSource{
 //               rightTableLastOffsetY = scrollView.contentOffset.y
 //           }
 //       }
-//
+
 }

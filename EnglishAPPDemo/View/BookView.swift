@@ -49,7 +49,7 @@ class BookView: UIView {
     /// - 代码中实例画的时候调用
     override init(frame: CGRect) {
         super.init(frame: frame)
-        print("frame")
+        //print("frame")
         contentView = loadViewFromNib()
         addSubview(contentView)
   
@@ -57,7 +57,7 @@ class BookView: UIView {
 
      /// 从storyborad中实例化的时候调用：
     required init?(coder aDecoder: NSCoder) {
-        print("coder")
+        //print("coder")
         super.init(coder: aDecoder)
         contentView = loadViewFromNib()
         addSubview(contentView)
