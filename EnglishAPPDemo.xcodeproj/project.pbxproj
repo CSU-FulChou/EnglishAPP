@@ -65,6 +65,10 @@
 		BF91D1DB233A745C00132BAE /* RecommandationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */; };
 		BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91D1DC233A747000132BAE /* RecommandationCellView.xib */; };
 		BFAAFD55237045BB008D8F0B /* ListeningLearnDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */; };
+		BFAFB5D22406626E00B9F8AD /* SynChooseBookTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB5D12406626E00B9F8AD /* SynChooseBookTableView.swift */; };
+		BFAFB5D42406628700B9F8AD /* SynChooseBookTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAFB5D32406628700B9F8AD /* SynChooseBookTableView.xib */; };
+		BFAFB5D82406996800B9F8AD /* SynChooseBookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB5D72406996800B9F8AD /* SynChooseBookTableCell.swift */; };
+		BFAFB5DA2406A7EA00B9F8AD /* SynChooseBookTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAFB5D92406A7EA00B9F8AD /* SynChooseBookTableCell.xib */; };
 		BFAFB7AE235DCD7A00656771 /* WordUnitChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */; };
 		BFBA2CA823FD16F5009A146F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBA2CA723FD16F5009A146F /* Main.storyboard */; };
 		BFC372C923FD2AAD00092E17 /* MyshelfFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC372C823FD2AAD00092E17 /* MyshelfFirstViewController.swift */; };
@@ -148,6 +152,10 @@
 		BF91D1DA233A745C00132BAE /* RecommandationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandationCellView.swift; sourceTree = "<group>"; };
 		BF91D1DC233A747000132BAE /* RecommandationCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommandationCellView.xib; sourceTree = "<group>"; };
 		BFAAFD54237045BB008D8F0B /* ListeningLearnDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningLearnDetailController.swift; sourceTree = "<group>"; };
+		BFAFB5D12406626E00B9F8AD /* SynChooseBookTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynChooseBookTableView.swift; sourceTree = "<group>"; };
+		BFAFB5D32406628700B9F8AD /* SynChooseBookTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynChooseBookTableView.xib; sourceTree = "<group>"; };
+		BFAFB5D72406996800B9F8AD /* SynChooseBookTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynChooseBookTableCell.swift; sourceTree = "<group>"; };
+		BFAFB5D92406A7EA00B9F8AD /* SynChooseBookTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynChooseBookTableCell.xib; sourceTree = "<group>"; };
 		BFAFB7AD235DCD7A00656771 /* WordUnitChooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordUnitChooseController.swift; sourceTree = "<group>"; };
 		BFBA2CA723FD16F5009A146F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BFC372C823FD2AAD00092E17 /* MyshelfFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyshelfFirstViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +264,10 @@
 				BFC372D223FFDD2C00092E17 /* OutsideBook.xib */,
 				BF6280062401536E00447343 /* BookUnitImageView.swift */,
 				BF6280082401538C00447343 /* BookUnitImageView.xib */,
+				BFAFB5D12406626E00B9F8AD /* SynChooseBookTableView.swift */,
+				BFAFB5D32406628700B9F8AD /* SynChooseBookTableView.xib */,
+				BFAFB5D72406996800B9F8AD /* SynChooseBookTableCell.swift */,
+				BFAFB5D92406A7EA00B9F8AD /* SynChooseBookTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,9 +437,11 @@
 				BF919B7E231CA45800792E80 /* LaunchScreen.storyboard in Resources */,
 				BF0373742363FD0A00D09393 /* SynExerciseBigView.xib in Resources */,
 				BF91D1DD233A747000132BAE /* RecommandationCellView.xib in Resources */,
+				BFAFB5D42406628700B9F8AD /* SynChooseBookTableView.xib in Resources */,
 				BF919B7B231CA45800792E80 /* Assets.xcassets in Resources */,
 				BF156FF5233E605A00FDD8BB /* RechargeHintView.xib in Resources */,
 				BF22BACF234982EC002DE170 /* ChooseLessionsView.xib in Resources */,
+				BFAFB5DA2406A7EA00B9F8AD /* SynChooseBookTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +499,7 @@
 				BF156FE5233CE4AD00FDD8BB /* ListeningCellView.swift in Sources */,
 				BF0373702363FBE700D09393 /* SynExerciseBigView.swift in Sources */,
 				BF5C1777233F0C51007B8DCC /* SettingView.swift in Sources */,
+				BFAFB5D82406996800B9F8AD /* SynChooseBookTableCell.swift in Sources */,
 				BF3E93612363159600422B8B /* testViewController.swift in Sources */,
 				BF14076823572AD800D1B2B8 /* noNetworkController.swift in Sources */,
 				BF156FE3233CDE2A00FDD8BB /* BookDetailController.swift in Sources */,
@@ -534,6 +549,7 @@
 				BFDE899F2377B91100C0B67F /* ReadLearnController.swift in Sources */,
 				BF03737823640D4100D09393 /* SynExerciseImageView.swift in Sources */,
 				BF5787F62334AA2F0088EC33 /* LoginController.swift in Sources */,
+				BFAFB5D22406626E00B9F8AD /* SynChooseBookTableView.swift in Sources */,
 				BF6FD50423365695004021D1 /* AboutUsController.swift in Sources */,
 				BFDE89922377A18500C0B67F /* DailyLearnController.swift in Sources */,
 				BF5787EE2334890C0088EC33 /* SynExercise.swift in Sources */,

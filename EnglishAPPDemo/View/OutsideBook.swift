@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// ### 课外读物里面显示的书
 //@IBDesignable
 class OutsideBook: UIView {
     
